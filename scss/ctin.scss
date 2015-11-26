@@ -189,7 +189,7 @@ html, body{
     width: 100vw;
     padding: 0;
     margin: 0;
-
+    overflow: fixed;
 }
 
 //============================
@@ -347,7 +347,7 @@ i{
 		    			font-size: 35px;
 		    		}
 	    			samp{
-	        			display: none;
+	        			display: block;
 	        			font-size: 5px;
 	        			color: transparent;
 	        			@include transition-mix(0.5s);
@@ -1224,10 +1224,10 @@ fieldset > .active
 				        			color: $blanco;
 				        		}
 				        		samp{
-				        			color: &blanco;
-				        			display: block;
-				        			font-size: 16px;
-				        			margin-top: 8px;
+				        			color: $blanco !important ; 
+				        			display: block !important ;
+				        			font-size: 16px !important ;
+				        			margin-top: 8px !important ;
 				        		}
 				        	}
 				        }

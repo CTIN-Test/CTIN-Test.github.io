@@ -212,7 +212,8 @@ html, body {
   height: 100vh;
   width: 100vw;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: fixed; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: Andale,Helvetica;
@@ -344,7 +345,7 @@ i + a {
           color: #FFFFFF;
           font-size: 35px; }
         .navbar .navbar-collapse .side-nav li a samp {
-          display: none;
+          display: block;
           font-size: 5px;
           color: transparent;
           -webkit-transition: all 0.5s ease-in-out;
@@ -1126,10 +1127,10 @@ fieldset > .active {
       font-size: 28px;
       color: #FFFFFF; }
     .navbar .navbar-collapse .side-nav:hover li a samp, .navbar .navbar-collapse .side-nav:focus li a samp {
-      color: .navbar .navbar-collapse .side-nav:hover li a samp, .navbar .navbar-collapse .side-nav:focus li a samp blanco;
-      display: block;
-      font-size: 16px;
-      margin-top: 8px; }
+      color: #FFFFFF !important;
+      display: block !important;
+      font-size: 16px !important;
+      margin-top: 8px !important; }
   .navbar .navbar-collapse .side-nav .row-1 {
     height: 93vh;
     padding: 5vh 0px; }

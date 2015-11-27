@@ -24,15 +24,10 @@
 <body class="container">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-fixed-top">
             
             <!-- Header logo -->
             <div class="navbar-header">
-                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> -->
                 <a class="navbar-brand" href="index.html">
                     <img class="logo" src="img/logo.svg">
                 </a>
@@ -41,27 +36,36 @@
             <!-- Sidebar Menu Items -->
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav side-nav ">
+
+                    <li class="text-center row-5-1">
+                        <a href="home.html">
+                            <i class="icon-home"></i>
+                            <samp>Inicio</samp>
+                        </a>
+                        <ul id="sub-menu">
+                            <li  class=" text-center row-10">
+                                <a href="eva-personal.html">Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li class="text-center row-5">
                         <a href="becario.html"> 
                             <i class="icon-user"></i>
                             <samp>Perfil</samp>
                         </a>
                     </li>
-                    <li class="text-center row-5-mut">
+                    <li class="text-center row-5-2">
                         <a>
                             <i class="icon-evaluacion"></i>
                             <samp>Evaluación</samp>
                         </a>
                         <ul id="sub-menu">
                             <li  class=" text-center row-10">
-                                <a href="eva-personal.html">
-                                    <samp>Personal</samp>
-                                </a>
+                                <a href="eva-personal.html">Personal</a>
                             </li>
                             <li class=" text-center row-10">
-                                <a href="eva-projects.html">
-                                    <samp>Proyectos</samp>
-                                </a>
+                                <a href="eva-projects.html">Equipo</a>
                             </li>
                         </ul>
                     </li>
@@ -76,13 +80,6 @@
                         <a href="projects.html">
                             <i class="icon-d_proyectos"></i>
                             <samp>Proyectos</samp>
-                        </a>
-                    </li>
-                    <li class="text-center row-3">
-                        <a href="recursos.html">
-                            <i class="icon-recursos"></i>
-                            <samp>Recursos</samp>
-                        </a>
                         </a>
                     </li>
                 </ul>
@@ -102,8 +99,8 @@
                          <div class="col-md-6 col-sm-6 img-general-link">
                             <div class="img-container">
                                 <img class=" " src="img/user.png">
-                                <a href="b-settings.html"><span class="icon-engranes"></span></a>
                             </div>
+                            <fieldset class="rating" data-rate ="3"></fieldset>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="col-lg-12">
@@ -128,33 +125,38 @@
                         <h4>Proyectos</h4>
                         <div class="col-lg-12">
 
-                            <div class="col-sm-4 img-general-link active">
-                                <div class="img-container-s">
+                            <div class="col-md-3 img-general-link active">
+                                <div class="img-container-s  progress-0">
                                     <img class=" " src="img/project.png">
-                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                    <a href="p-settings.html"><span class="icon-d_proyectos"></span></a>
                                 </div>
-                                <h5><small>CTIN</small></h5>
+                                <h5> <small>CTIN</small> </h5>
                                 <h5>Apuntate</h5>
-                                <h5><span>Activo</span></h5>
                             </div>
-                            <div class="col-sm-4 img-general-link active">
-                                <div class="img-container-s">
+                            <div class="col-md-3 img-general-link active">
+                                <div class="img-container-s  progress-30">
                                     <img class=" " src="img/project.png">
-                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                    <a href="p-settings.html"><span class="icon-d_proyectos"></span></a>
                                 </div>
-                                <h5><small>CTIN</small></h5>
+                                <h5> <small>CTIN</small> </h5>
                                 <h5>Apuntate</h5>
-                                <h5><span>Activo</span></h5>
                             </div>
-                            <div class="col-sm-4 img-general-link active">
-                                <div class="img-container-s">
+                            <div class="col-md-3 img-general-link active">
+                                <div class="img-container-s  progress-60">
                                     <img class=" " src="img/project.png">
-                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                    <a href="p-settings.html"><span class="icon-d_proyectos"></span></a>
                                 </div>
-                                <h5><small>CTIN</small></h5>
+                                <h5> <small>CTIN</small> </h5>
                                 <h5>Apuntate</h5>
-                                <h5><span>Activo</span></h5>
                             </div>
+                            <div class="col-md-3 img-general-link active">
+                                <div class="img-container-s  progress-100">
+                                    <img class=" " src="img/project.png">
+                                    <a href="p-settings.html"><span class="icon-d_proyectos"></span></a>
+                                </div>
+                                <h5> <small>CTIN</small> </h5>
+                                <h5>Apuntate</h5>
+                            </div>   
                                 
                         </div>
                     </div>
@@ -164,10 +166,12 @@
                 
             <!-- END Generl  -->
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481936.9211909867!2d-99.15261552764315!3d19.320069045238263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202107c974a21%3A0x637e2596b7836f14!2sCTIN+M%C3%A9xico!5e0!3m2!1ses!2smx!4v1446527882833" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
         </div>
         <!-- END General Container -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- rating js -->
+    <script src="js/rating.js"></script>
 
 </body>
 

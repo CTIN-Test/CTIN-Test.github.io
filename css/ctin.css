@@ -392,20 +392,22 @@ i + a {
 .page-wrapper, .page-wrapper-login {
   position: absolute;
   top: 7vh;
-  right: 0;
   margin: 0;
   background-color: #FFFFFF;
   padding: 40px 50px;
-  min-height: 93vh; }
+  min-height: 93vh;
+  width: 100vw; }
 
 .page-wrapper-login {
   background-color: transparent;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  position: absolute;
   top: 0;
-  left: 0;
-  padding: 0; }
+  left: 0 !important;
+  padding: 0;
+  margin: 0; }
   .page-wrapper-login .form-login {
     background: url("../img/login-bg.svg");
     background-size: 100% auto;
@@ -498,6 +500,7 @@ i + a {
 .inline-form {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   width: 100%; }
@@ -600,8 +603,7 @@ i + a {
 
 .info-body {
   width: 100%;
-  margin: 3vh 0 !important;
-  display: block; }
+  margin: 3vh 0 !important; }
   .info-body .col-lg-12 {
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -610,9 +612,13 @@ i + a {
     width: 25vw; }
   .info-body p {
     text-align: justify; }
+  .info-body iframe {
+    margin: 10px 0px;
+    padding: 0;
+    width: 90vw;
+    height: 50vh; }
 
 .img-general-link {
-  margin: 0 1vw;
     /**
 	* .p-5 5% -> p-100 100%
 	**/ }

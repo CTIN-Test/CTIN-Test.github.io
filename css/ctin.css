@@ -629,6 +629,8 @@ i + a {
     width: 20vw;
     min-width: 200px;
     min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     border: none;
     border-radius: 50%;
     -webkit-transition: all 0.5s ease-in-out;

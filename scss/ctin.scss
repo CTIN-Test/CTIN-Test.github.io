@@ -452,7 +452,6 @@ i{
     padding: 40px 50px;
     min-height: $aside-height;
     width: 100vw;
-
 }
 .page-wrapper-login {
 	@extend .page-wrapper;
@@ -740,6 +739,9 @@ $image-size: 20vw;
 		    width: $image-size;
 		    min-width: 200px;
 		    min-height: 200px;
+
+		   	max-width: 300px;
+		    max-height: 300px;
 		    border: none;
 		    border-radius: 50%;
 		    @include transition-mix(0.5s);

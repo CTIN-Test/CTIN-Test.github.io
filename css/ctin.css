@@ -235,13 +235,13 @@ h2, .h2 {
 h3, .h3 {
   font-size: 28px;
   border-bottom: solid 4px #EF4562;
-  margin-bottom: 20px;
+  margin: 3vh 0 !important;
   width: 50%; }
 
 h4, .h4 {
   font-size: 22px;
   border-bottom: solid 2px #EF4562;
-  margin-bottom: 30px;
+  margin: 30px 0;
   width: 35%; }
 
 h5, .h5 {
@@ -602,10 +602,9 @@ i + a {
     height: 100%; }
 
 section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 4vh 0 !important; }
+  margin: 3vh 0 !important;
+  display: block;
+  height: 100%; }
   section .col-lg-12 {
     padding-top: 3vh;
     padding-bottom: 3vh;

@@ -701,11 +701,13 @@ $image-size: 20vw;
 		}
 	}
 
-	.info-body{
-		width: 100%;
-		margin: 3vh 0 !important;
-		//display: block;
-
+	section{
+		//display: flex;
+		//@extend .column-form;
+		display: flex;
+	    flex-direction: column;
+	    width: 100%;
+		margin: 4vh 0 !important;
 		.col-lg-12{
 			padding-top: 3vh;
 			padding-bottom: 3vh;
@@ -731,7 +733,7 @@ $image-size: 20vw;
 	.img-general-link{
 		@extend .column-form;
 		$border: 5px ;
-		//margin:  0 10px;
+		margin: 10px;
 
 		.img-container {
 		    position: relative;

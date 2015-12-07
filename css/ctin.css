@@ -601,24 +601,27 @@ i + a {
     min-height: 25vh;
     height: 100%; }
 
-.info-body {
+section {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin: 3vh 0 !important; }
-  .info-body .col-lg-12 {
+  margin: 4vh 0 !important; }
+  section .col-lg-12 {
     padding-top: 3vh;
     padding-bottom: 3vh;
     width: 100%; }
-  .info-body h4 {
+  section h4 {
     width: 25vw; }
-  .info-body p {
+  section p {
     text-align: justify; }
-  .info-body iframe {
+  section iframe {
     margin: 10px 0px;
     padding: 0;
     width: 90vw;
     height: 50vh; }
 
 .img-general-link {
+  margin: 10px;
     /**
 	* .p-5 5% -> p-100 100%
 	**/ }

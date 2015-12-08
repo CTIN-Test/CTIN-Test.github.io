@@ -563,6 +563,7 @@ i{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-right: 15%;
 	padding-left: 15%;
 }
@@ -735,17 +736,18 @@ $image-size: 20vw;
 	.img-general-link{
 		@extend .column-form;
 		$border: 5px ;
-		margin: 10px;
+		margin: 10px 5px;
+		padding: 0 !important;
 
 		.img-container {
 		    position: relative;
 		    overflow: hidden; /* added */
 		    width: $image-size;
-		    min-width: 200px;
-		    min-height: 200px;
+		    min-width: 150px;
+		    min-height: 150px;
 
-		   	max-width: 300px;
-		    max-height: 300px;
+		   	max-width: 200px;
+		    max-height: 200px;
 		    border: none;
 		    border-radius: 50%;
 		    @include transition-mix(0.5s);
@@ -805,8 +807,11 @@ $image-size: 20vw;
 
 		.img-container-s{
 			@extend .img-container;
-			width: $image-size * 0.7;
+			width: $image-size * 0.5;
 			border-color: $rojo-ctin;
+
+			min-width: 150px;
+		    min-height: 150px;
 
 			&:hover, &:focus{
 		    	a{
@@ -815,6 +820,15 @@ $image-size: 20vw;
 				    }
 		    	}
 		    }
+		}
+
+		.img-container-l{
+			@extend .img-container;
+			min-width: 200px;
+		    min-height: 200px;
+
+		   	max-width: 300px;
+		    max-height: 300px;
 		}
 
 		// ====================================
@@ -955,8 +969,7 @@ $image-size: 20vw;
 
 .metrics-box{
 
-	display: flex;
-	justify-content: space-around;
+	@extend .between-form;
 	width: 100% !important;
 	margin-top: 3vh;
 	margin-bottom: 3vh;
@@ -1178,6 +1191,7 @@ $image-size: 20vw;
 				}
 				label{
 					margin: 0;
+
 				}
 	
 				.blank{
@@ -1314,24 +1328,26 @@ fieldset {
 
 /* ----------- Phone ----------- */
 
-@media only screen and (min-device-width: 100px) 
-  and (max-device-width: 736px) and (max-device-height: 700px){ 
+@media (min-device-width: 100px) 
+  and (max-device-width: 736px){ 
 
-  	$image-size-min: 40vh;
- 
-  	.img-general-link{
+ // only screen and (max-device-height: 700px)
 
-		.img-container {
-		    width: $image-size-min;
-		}
+ 	.general-info{
+		.form-group{
 
-		.img-container-s{
-			width: $image-size-min * 0.7;
+			label{
+				padding: 0 15% 0 0;
+			}
 		}
 	}
 
   	.center{
 		flex-direction: column !important;
+	}
+	.between-form{
+		padding-right: 5%;
+		padding-left: 5%;
 	}
 
   	.page-wrapper {
@@ -1433,7 +1449,7 @@ fieldset {
 		//top: $nav-height;
 		left: $aside-width;
 	}
-  		.navbar{
+  	.navbar{
 			.navbar-collapse{
 				//Side Menu
 				.side-nav {

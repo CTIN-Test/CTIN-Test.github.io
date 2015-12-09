@@ -28,7 +28,7 @@
             
             <!-- Header logo -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand">
                     <img class="logo" src="img/logo.svg">
                 </a>
             </div> <!-- END Header logo -->
@@ -44,7 +44,7 @@
                         </a>
                         <ul id="sub-menu">
                             <li  class=" text-center row-10">
-                                <a href="eva-personal.html">Log Out</a>
+                                <a href="index.html">Log Out</a>
                             </li>
                         </ul>
                     </li>
@@ -96,22 +96,25 @@
                 <div class="general-info col-sm-8  col-sm-offset-2">
                  <h3>Evaluacion de Equipo</h3>
 
-                    <div class="info-body row text">
-
-                         <div class="col-sm-6 img-general-link">
-                            <div class="img-container-s">
-                                <img class=" " src="img/user.png">
+                    <section class="row center">
+                        <div class="winner-container">
+                            <div class="board-flip">
+                                <div class="board-front">
+                                    <img src="img/user.png" alt="" />
+                                </div>
+                                <div class="board-back">
+                                    <div class="board-inner">
+                                        <h5><small>Software</small></h5>
+                                        <h5>Miguel Angel Ruiz Gálvez</h5>
+                                        <h5><small>Ing. Mecatrónico</small></h5>
+                                        <fieldset class="rating" data-rate ="3"></fieldset>  
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </div> 
+                    </section>
 
-                        <div class="col-sm-6">
-                                <h5>Proyecto</h5>
-                                <h5>Miguel A. Ruiz Galvez</h5>
-                                <h6>Ing. Mecatronica</h6>
-                        </div>
-                    </div>
-
-                    <div class="info-body row">
+                    <section class="row">
                         <form class="text-center">
                             <div class="form-group text-left">
                                 <label>¿El becario entrega sus tareas con la calidad esperada dentro del proyecto?</label>
@@ -224,6 +227,29 @@
                                 </div>
                             </div>
 
+                            <div class="form-group text-left">
+                                <label>¿Recomendarias a este becario para trabajar con el en proyectos futuros?</label>
+                                <div class="radio">
+                                  <label>De acuerdo</label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="1">
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions4" id="inlineRadio2" value="2">
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions4" id="inlineRadio3" value="3">
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions4" id="inlineRadio4" value="4">
+                                    </label>
+                                             <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions4" id="inlineRadio5" value="5">
+                                    </label>
+                                  <label>Desacuerdo</label>
+                                </div>
+                            </div>
+
                             <div class="form-group col-lg-12 text-left">   
                                 <label>Añade un comentario</label>
                                 <textarea class="form-control" placeholder="Comentario..."></textarea>
@@ -233,7 +259,7 @@
                                 <button class="btn btn-xl">Sigiente</button>
                             </div>
                         </form>
-                    </div>
+                    </section>
 
                    
                 </div><!-- General User data -->
@@ -242,7 +268,11 @@
 
         </div>
         <!-- END General Container -->
-
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- rating js -->
+    <script src="js/rating.js"></script>
 </body>
+
 
 </html>

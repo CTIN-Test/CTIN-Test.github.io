@@ -97,7 +97,7 @@
     border-color: rgba(66, 66, 66, 0.8);
     border-width: 2px; }
 .fixed-table-pagination .pagination-detail {
-  margin-top: 13px;
+  margin-top: 35px;
   margin-bottom: 10px;
   border-radius: 20px; }
 .fixed-table-pagination .pagination-info {
@@ -107,7 +107,7 @@
   border-radius: 20px;
   padding: 6px; }
 .fixed-table-pagination .pagination {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px; }
   .fixed-table-pagination .pagination ul {
     margin-top: 0px;
@@ -484,6 +484,14 @@ i + a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
+
+.center-around {
+  display: flex !important;
+  /* added */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; }
 
 .center-between, .metrics-box {
   display: flex !important;
@@ -966,10 +974,11 @@ section {
   min-width: 300px;
   min-height: 200px;
   max-height: 250px;
+  max-width: 1000px;
   color: #FFFFFF;
   background-color: #BF2A40;
   border-radius: 300px;
-  border: solid #BF2A40 0px;
+  border: solid #BF2A40 5px;
   overflow: hidden;
   display: flex !important;
   /* added */
@@ -1136,6 +1145,12 @@ section {
   width: 200px;
   height: 200px;
   margin: 5px; }
+  .winner-container .board-flip div {
+    border-radius: 20px !important; }
+    .winner-container .board-flip div:before {
+      border-radius: 20px; }
+    .winner-container .board-flip div:after {
+      border-radius: 20px; }
   .winner-container fieldset label:before {
     font-size: 1.2em; }
 

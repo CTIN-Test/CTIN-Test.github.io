@@ -336,6 +336,7 @@ i{
 	background-repeat: no-repeat;
 	display: block;
 	border: none; 
+
 	.navbar-header{
 		display: block;
 		.navbar-brand{
@@ -535,6 +536,16 @@ i{
 	flex-wrap: wrap;
     align-items: center;
 	justify-content: center;
+	//height: 100% !important;
+	//width: 100%;
+}
+
+.center-around{
+	display: flex !important; /* added */
+	flex-direction: row;
+	flex-wrap: wrap;
+    align-items: center;
+	justify-content: space-around;
 	//height: 100% !important;
 	//width: 100%;
 }
@@ -948,13 +959,14 @@ $image-size: 20vw;
 		min-width: 300px;
 		min-height: 200px;
 		max-height: 250px;
+		max-width: 1000px;
 		//padding: 10px 40px;
 
 		color: $blanco;
 		background-color: $cancel;
 
 		border-radius: 300px;
-		border: solid $cancel 0px;
+		border: solid $cancel 5px;
 		overflow: hidden;
 
 		display: flex !important; /* added */
@@ -1177,6 +1189,19 @@ $image-size: 20vw;
 		width: 200px;
 		height: 200px;
 		margin: 5px;
+
+		.board-flip{
+			div{
+				border-radius: 20px !important;
+				&:before{
+					border-radius: 20px;
+				}
+				&:after {
+					border-radius: 20px;
+				}
+			}
+		}
+
 		fieldset { 
 		  label{
 			  	&:before{

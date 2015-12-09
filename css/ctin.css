@@ -241,7 +241,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: 22px;
   border-bottom: solid 2px #EF4562;
-  margin: 30px 0;
+  margin: 3vh 0;
   width: 35%; }
 
 h5, .h5 {
@@ -483,29 +483,24 @@ i + a {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  height: 100% !important;
-  width: auto; }
+  justify-content: center; }
 
-.center-between {
+.center-between, .metrics-box {
   display: flex !important;
   /* added */
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  height: 100% !important;
-  width: auto; }
+  justify-content: space-between; }
 
 .inline-form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  width: 100%; }
+  justify-content: space-around; }
 
-.between-form, .metrics-box {
+.between-form {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -560,7 +555,7 @@ i + a {
   background-color: #EF4562; }
 
 .bg-rojo {
-  background-color: #ea492a; }
+  background-color: #BF2A40; }
 
 .bg-gold {
   background-color: transparent; }
@@ -617,8 +612,16 @@ section {
   section iframe {
     margin: 10px 0px;
     padding: 0;
-    width: 90vw;
-    height: 50vh; }
+    width: 400px;
+    height: 300px; }
+  section .contacto {
+    margin: 2vh 1vw !important;
+    width: 100%;
+    display: flex !important;
+    /* added */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; }
 
 .img-general-link {
   margin: 10px 5px;
@@ -958,10 +961,44 @@ section {
     .img-general-link:nth-child(even) .img-container a, .img-general-link:nth-child(even) .img-container-s a, .img-general-link:nth-child(even) .img-container-l a, .img-general-link:nth-child(even) .img-container-s a {
       color: #14D5DB; }
 
+.top-down {
+  width: 70vw;
+  min-width: 300px;
+  min-height: 200px;
+  max-height: 250px;
+  color: #FFFFFF;
+  background-color: #BF2A40;
+  border-radius: 300px;
+  border: solid #BF2A40 0px;
+  overflow: hidden;
+  display: flex !important;
+  /* added */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around; }
+  .top-down p {
+    padding: 20px 100px 20px 20px;
+    width: 70%;
+    color: #FFFFFF;
+    text-align: center; }
+    .top-down p small {
+      color: rgba(255, 255, 255, 0.6); }
+  .top-down .top-img {
+    height: 300px;
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex !important;
+    /* added */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center; }
+
 .metrics-box {
   width: 100% !important;
-  margin-top: 3vh;
-  margin-bottom: 3vh; }
+  margin: 3vh 1vh; }
   .metrics-box .metrics {
     display: flex;
     align-items: center;
@@ -970,7 +1007,7 @@ section {
     .metrics-box .metrics .data {
       width: 15vh;
       height: 15vh;
-      border: solid #000637 10px;
+      border: solid #000637 7px;
       border-radius: 7.5vh;
       display: flex;
       align-items: center;
@@ -1251,13 +1288,16 @@ fieldset {
 
 /* ----------- Phone ----------- */
 @media (min-device-width: 100px) and (max-device-width: 736px) {
+  .metrics-box .metrics .data {
+    border: solid #000637 5px; }
+
   .general-info .form-group label {
     padding: 0 15% 0 0; }
 
   .center {
     flex-direction: column !important; }
 
-  .between-form, .metrics-box {
+  .between-form {
     padding-right: 5%;
     padding-left: 5%; }
 
@@ -1336,7 +1376,34 @@ fieldset {
       .navbar .navbar-collapse .side-nav li:hover, .navbar .navbar-collapse .side-nav li:focus {
         background-color: #14D5DB; }
         .navbar .navbar-collapse .side-nav li:hover #sub-menu, .navbar .navbar-collapse .side-nav li:focus #sub-menu {
-          display: block; } }
+          display: block; }
+
+  section .contacto {
+    margin: 2vh 0 !important;
+    justify-content: center; }
+
+  .top-down {
+    max-width: 150px;
+    max-height: 500px;
+    border-radius: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch; }
+    .top-down p {
+      padding: 5px;
+      position: relative;
+      top: -50px;
+      font-size: 14px; }
+    .top-down .top-img {
+      height: 300px;
+      width: 300px;
+      position: relative;
+      top: -50px; } }
+/* ----------- afteer tablet ----------- */
+@media only screen and (min-device-width: 738px) and (max-device-width: 800px) {
+  section .contacto {
+    margin: 2vh 0 !important;
+    justify-content: center; } }
 /* ----------- afteer tablet ----------- */
 @media only screen and (min-device-width: 738px) {
   .page-wrapper, .page-wrapper-login {

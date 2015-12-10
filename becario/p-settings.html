@@ -11,15 +11,17 @@
 
     <title>CTIN | Centro de Tecnología e Innovación</title>
 
+    <!-- Normalize CSS -->
+    <link href="../css/normalize.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/ctin.css" rel="stylesheet">
+    <link href="../css/ctin.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    <link href="fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
+    <link href="../fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
     <!-- Datetimepicker CSS -->
-    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    
 </head>
 
 <body class="container">
@@ -30,7 +32,7 @@
             <!-- Header logo -->
             <div class="navbar-header">
                 <a class="navbar-brand">
-                    <img class="logo" src="img/logo.svg">
+                    <img class="logo" src="../img/logo.svg">
                 </a>
             </div> <!-- END Header logo -->
 
@@ -38,14 +40,17 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav side-nav ">
 
-                    <li class="text-center row-5-1">
+                    <li class="text-center row-5-2">
                         <a href="home.html">
                             <i class="icon-home"></i>
                             <samp>Inicio</samp>
                         </a>
                         <ul id="sub-menu">
                             <li  class=" text-center row-10">
-                                <a href="index.html">Log Out</a>
+                                <a href="../index.html">Log Out</a>
+                            </li>
+                            <li  class=" text-center row-10">
+                                <a href="buzon.html">Buzon</a>
                             </li>
                         </ul>
                     </li>
@@ -57,7 +62,7 @@
                         </a>
                     </li>
                     <li class="text-center row-5-2">
-                        <a>
+                        <a href="#">
                             <i class="icon-evaluacion"></i>
                             <samp>Evaluación</samp>
                         </a>
@@ -102,7 +107,17 @@
                     
                         <div class="between-form form-group">
                             <label>Logotipo</label>
-                            <input type="file" id="exampleInputFile" class="custom-file-input">
+                            <!-- <input type="file" id="exampleInputFile" class="custom-file-input"> -->
+                            
+                                <input type="file" name="file-1[]" id="file-1" class="form-control inputfile" data-multiple-caption="{count} files selected" multiple />
+
+                                <label for="file-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                        <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+                                    </svg>
+                                    <span>Elige un archivo&hellip;</span>
+                                </label>
+
                         </div>
                         <div class="between-form form-group">
                             <label>Nombre</label>
@@ -176,27 +191,50 @@
                         <h4>Recursos</h4>
                         <div class="between-form form-group">
                             <label>Infografía</label>
-                            <input type="file" id="exampleInputFile" class="custom-file-input">
+                            <input type="file" name="file-2[]" id="file-2" class="form-control inputfile" data-multiple-caption="{count} files selected" multiple />
+
+                            <label for="file-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                    <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+                                </svg>
+                                <span>Elige un archivo&hellip;</span>
+                            </label>
                         </div>
 
                         <div class="between-form form-group">
-                            <label>Presentacion</label>
-                            <input type="file" id="exampleInputFile" class="custom-file-input">
-                        </div>
-                        
-                        <div class="between-form form-group">
-                            <label>Plan de Trabajo</label>
-                            <input type="file" id="exampleInputFile" class="custom-file-input">
+                            <label>Presentación</label>
+                            <input type="file" name="file-3[]" id="file-3" class="form-control inputfile" data-multiple-caption="{count} files selected" multiple />
+
+                            <label for="file-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                    <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+                                </svg>
+                                <span>Elige un archivo&hellip;</span>
+                            </label>
                         </div>
 
                         <div class="between-form form-group">
                             <label>Plan de Trabajo</label>
-                            <input type="file" id="exampleInputFile" class="custom-file-input">
+                            <input type="file" name="file-5[]" id="file-5" class="form-control inputfile" data-multiple-caption="{count} files selected" multiple />
+
+                            <label for="file-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                    <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+                                </svg>
+                                <span>Elige un archivo&hellip;</span>
+                            </label>
                         </div>   
 
                         <div class="between-form form-group">
                             <label>Archivo Extra</label>
-                            <input type="file" id="exampleInputFile" class="custom-file-input">
+                            <input type="file" name="file-6[]" id="file-6" class="form-control inputfile" data-multiple-caption="{count} files selected" multiple />
+
+                            <label for="file-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                    <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+                                </svg>
+                                <span>Elige un archivo&hellip;</span>
+                            </label>
                         </div>                           
                         
                         <div class=" end-form form-group text-right">
@@ -213,11 +251,13 @@
         <!-- END General Container -->
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="../js/jquery.js"></script>
 <!-- bootstrap js -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <!-- Datetimepicker js -->
-<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="../js/bootstrap-datetimepicker.min.js"></script>
+<!-- Custom file input js -->
+<script src="../js/custom-file-input.js"></script>
 <!-- Datepicker script -->
 <script type="text/javascript">
   $(function() {

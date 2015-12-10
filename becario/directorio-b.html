@@ -11,12 +11,14 @@
 
     <title>CTIN | Centro de Tecnología e Innovación</title>
 
+    <!-- Normalize CSS -->
+    <link href="../css/normalize.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/ctin.css" rel="stylesheet">
+    <link href="../css/ctin.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    <link href="fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
+    <link href="../fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -27,8 +29,8 @@
             
             <!-- Header logo -->
             <div class="navbar-header">
-                 <a class="navbar-brand">
-                    <img class="logo" src="img/logo.svg">
+                <a class="navbar-brand">
+                    <img class="logo" src="../img/logo.svg">
                 </a>
             </div> <!-- END Header logo -->
 
@@ -36,14 +38,17 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav side-nav ">
 
-                    <li class="text-center row-5-1">
+                    <li class="text-center row-5-2">
                         <a href="home.html">
                             <i class="icon-home"></i>
                             <samp>Inicio</samp>
                         </a>
                         <ul id="sub-menu">
                             <li  class=" text-center row-10">
-                                <a href="index.html">Log Out</a>
+                                <a href="../index.html">Log Out</a>
+                            </li>
+                            <li  class=" text-center row-10">
+                                <a href="buzon.html">Buzon</a>
                             </li>
                         </ul>
                     </li>
@@ -54,8 +59,8 @@
                             <samp>Perfil</samp>
                         </a>
                     </li>
-                    <li class="text-center row-5-2 active">
-                        <a>
+                    <li class="text-center row-5-2">
+                        <a href="#">
                             <i class="icon-evaluacion"></i>
                             <samp>Evaluación</samp>
                         </a>
@@ -69,7 +74,7 @@
                         </ul>
                     </li>
                     
-                    <li class="text-center row-5">
+                    <li class="text-center row-5 active">
                         <a href="directorio-b.html">
                             <i class="icon-d_becarios"></i>
                             <samp>Becarios</samp>
@@ -88,117 +93,44 @@
 
         <!-- General Container -->
         <div class="page-wrapper">
-
-            <!-- Generl Row -->
-
-                <!-- General User data -->
-                <div class="general-info col-sm-8  col-sm-offset-2">
-
-                    <h3>Evaluación personal</h3>
-
-                    <form class="col-lg-12 text-right">
-                    
-                        <div class="center-between">
-
-                             <div class="form-group col-lg-4">
-                                <input type="text" class="form-control" id="tarea" placeholder="Tarea">
-                            </div>
-
-                             <div class="form-group col-lg-4">
-                                    <select class="form-control ">
-                                        <option disabled selected> Proyecto...</option>
-                                      <option >Apuntate</option>
-                                      <option>Codex</option>
-                                      <option>Circulo Azul</option>
-                                      <option>03</option>
-                                      <option>04</option>
-                                      <option>05</option>
-                                      <option>06</option>
-                                      <option>07</option>
-                                      <option>08</option>
-                                      <option>09</option>
-                                      <option>10</option>
-                                      <option>11</option>
-                                      <option>12</option>
-                                    </select>
-                            </div>
-
-                            <div class="form-group center">
-                                <select class="form-control hrs">
-                                  <option selected>00</option>
-                                  <option>01</option>
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                  <option>06</option>
-                                  <option>07</option>
-                                  <option>08</option>
-                                  <option>09</option>
-                                  <option>10</option>
-                                  <option>11</option>
-                                  <option>12</option>
-                                </select>
-                                    
-                                <div class="blank">:</div>
-                                  
-                                <select  class="form-control hrs">
-                                  <option selected>00</option>
-                                  <option>10</option>
-                                  <option>15</option>
-                                  <option>20</option>
-                                  <option>25</option>
-                                  <option>30</option>
-                                  <option>35</option>
-                                  <option>40</option>
-                                  <option>45</option>
-                                  <option>50</option>
-                                  <option>55</option>
-                                </select>
-
-                                <label> hrs </label>
-                            </div>
-
-                        </div>
-                        <div class="form-group col-lg-12 full-form">
-                            <textarea class="form-control" placeholder="Descripción"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-max-margin">Añadir Tarea</button>      
-                    </form>
-
-                    <h4>Tareas Realizadas</h4>
-
+            <section class="row">
+                <div class="general-info col-lg-8 col-lg-offset-2">
+                    <h3>Directorio Becarios</h3>
+ 
                     <table id="fresh-table" class="table table-hover">
                                 <thead>
-                                    <th data-field="Tarea" data-sortable="true">Tarea</th>
-                                    <th data-field="Tiempo" data-sortable="true">Tiempo</th>
-                                    <th data-field="Proyecto" data-sortable="true">Proyecto</th>
-                                    <th data-field="e-mail">Edición</th>
+                                    <th>Perfil</th>
+                                    <th data-field="ID Becario" data-sortable="true">ID Becario</th>
+                                    <th data-field="nombre" data-sortable="true">Nombre</th>
+                                    <th data-field="area" data-sortable="true">Area</th>
+                                    <th data-field="carrera" data-sortable="true">Carrera</th>
+                                    <th data-field="e-mail" data-sortable="true">E-mail</th>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>
+                                            <a href="becario-simple.html"> 
+                                                <i class="icon-user icon-l"></i>
+                                            </a>
+                                        </td>
+                                        <td>2</td>
                                         <td>Dakota Rice</td>
                                         <td>$36,738</td>
                                         <td>Niger</td>
-                                        <td class="text-center">
-                                            <a href="becario-simple.html" data-toggle="tooltip"  title="Editar"> 
-                                                <i class="icon-circulo_editar icon-l"></i>
-                                            </a>
-                                            <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar"> 
-                                                <i class="icon-circulo_tache icon-l"></i>
-                                            </a>
-                                         </td>
+                                        <td>Niger</td>
                                         
                                     </tr>
                                     <tr>
                                         <td>2</td>
+                                        <td>2</td>
                                         <td>Minerva Hooper</td>
+                                        <td>$23,789</td>
                                         <td>Curaçao</td>
                                         
                                     </tr>
                                     <tr>
                                         <td>3</td>
+                                        <td>2</td>
                                         <td>Sage Rodriguez</td>
                                         <td>$56,142</td>
                                         <td>Netherlands</td>
@@ -206,6 +138,7 @@
                                     </tr>
                                     <tr>
                                         <td>4</td>
+                                        <td>2</td>
                                         <td>Philip Chaney</td>
                                         <td>$38,735</td>
                                         <td>Korea, South</td>
@@ -213,6 +146,8 @@
                                     </tr>
                                     <tr>
                                         <td>5</td>
+                                        <td>2</td>
+                                        <td>2</td>
                                         <td>Doris Greene</td>
                                         <td>$63,542</td>
                                         <td>Malawi</td>
@@ -220,107 +155,115 @@
                                     </tr>
                                     <tr>
                                         <td>6</td>
+                                        <td>2</td>
                                         <td>Mason Porter</td>
                                         <td>$78,615</td>
                                         <td>Chile</td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
+                                        <td>2</td>
                                         <td>Alden Chen</td>
                                         <td>$63,929</td>
                                         <td>Finland</td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
+                                        <td>2</td>
                                         <td>Colton Hodges</td>
                                         <td>$93,961</td>
                                         <td>Nicaragua</td>
                                     </tr>
                                     <tr>
                                         <td>9</td>
+                                        <td>2</td>
                                         <td>Illana Nelson</td>
                                         <td>$56,142</td>
                                         <td>Heard Island</td>
                                     </tr>
                                     <tr>
                                         <td>10</td>
+                                        <td>2</td>
                                         <td>Nicole Lane</td>
                                         <td>$93,148</td>
                                         <td>Cayman Islands</td>
                                     </tr>
                                     <tr>
                                         <td>11</td>
+                                        <td>2</td>
                                         <td>Chaim Saunders</td>
                                         <td>$5,502</td>
                                         <td>Romania</td>
                                     </tr>
                                     <tr>
                                         <td>12</td>
+                                        <td>2</td>
                                         <td>Josiah Simon</td>
                                         <td>$50,265</td>
                                         <td>Christmas Island</td>
                                     </tr>
                                     <tr>
                                         <td>13</td>
+                                        <td>2</td>
                                         <td>Ila Poole</td>
                                         <td>$67,413</td>
                                         <td>Montenegro</td>
                                     </tr>
                                     <tr>
                                         <td>14</td>
+                                        <td>2</td>
                                         <td>Shana Mejia</td>
                                         <td>$58,566</td>
                                         <td>Afghanistan</td>
                                     </tr>
                                     <tr>
                                         <td>15</td>
+                                        <td>2</td>
                                         <td>Lana Ryan</td>
                                         <td>$64,151</td>
                                         <td>Martinique</td>
                                     </tr>
                                     <tr>
                                         <td>16</td>
+                                        <td>2</td>
                                         <td>Daquan Bender</td>
                                         <td>$91,906</td>
                                         <td>Sao Tome and Principe</td>
                                     </tr>
                                     <tr>
                                         <td>17</td>
+                                        <td>2</td>
                                         <td>Connor Wagner</td>
                                         <td>$86,537</td>
                                         <td>Germany</td>
                                     </tr>
                                     <tr>
                                         <td>18</td>
+                                        <td>2</td>
                                         <td>Boris Horton</td>
                                         <td>$35,094</td>
                                         <td>Laos</td>
                                     </tr>
                                     <tr>
                                         <td>19</td>
+                                        <td>2</td>
                                         <td>Winifred Ryan</td>
                                         <td>$64,436</td>
                                         <td>Ireland</td>
                                     </tr>
                                 </tbody>
                     </table>
-  
                 </div><!-- General User data -->
-                
-            <!-- END Generl  -->
-
+            </section>
         </div>
         <!-- END General Container -->
 
-    
-    <!-- /#wrapper -->
-
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="../js/jquery.js"></script>
 <!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <!-- Bootstrap-table js -->
-<script src="js/bootstrap-table.js"></script>
+<script src="../js/bootstrap-table.js"></script>
 <!-- Table script -->
 <script type="text/javascript">
         var $table = $('#fresh-table'),
@@ -330,15 +273,25 @@
             $table.bootstrapTable({
                 toolbar: ".toolbar",
                 showRefresh: false,
-                search: false,
+                search: true,
                 showToggle: false,
                 showColumns: false,
-                pagination: false,
-                striped: false
+                pagination: true,
+                striped: true,
+                pageSize: 8,
+                pageList: [8,10,25,50,100],
+                formatSearch: function(){
+                    return "Buscar";
+                },
+                formatShowingRows: function(pageFrom, pageTo, totalRows){
+                    return "Total de becarios " + totalRows
+                },
+                formatRecordsPerPage: function(pageNumber){
+                    return pageNumber + " filas visibles";
+                }
             });
         });     
     </script>
-
 
 </body>
 

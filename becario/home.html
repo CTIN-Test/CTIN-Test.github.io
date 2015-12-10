@@ -11,12 +11,14 @@
 
     <title>CTIN | Centro de Tecnología e Innovación</title>
 
+    <!-- Normalize CSS -->
+    <link href="../css/normalize.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/ctin.css" rel="stylesheet">
+    <link href="../css/ctin.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    <link href="fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
+    <link href="../fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
 
 
 </head>
@@ -29,22 +31,25 @@
             <!-- Header logo -->
             <div class="navbar-header">
                 <a class="navbar-brand">
-                    <img class="logo" src="img/logo.svg">
+                    <img class="logo" src="../img/logo.svg">
                 </a>
             </div> <!-- END Header logo -->
 
             <!-- Sidebar Menu Items -->
             <div class="navbar-collapse">
-                <ul class="nav navbar-nav side-nav">
+                <ul class="nav navbar-nav side-nav ">
 
-                    <li class="text-center row-5-1 active">
+                    <li class="text-center row-5-2 active">
                         <a href="home.html">
                             <i class="icon-home"></i>
                             <samp>Inicio</samp>
                         </a>
                         <ul id="sub-menu">
                             <li  class=" text-center row-10">
-                                <a href="index.html">Log Out</a>
+                                <a href="../index.html">Log Out</a>
+                            </li>
+                            <li  class=" text-center row-10">
+                                <a href="buzon.html">Buzon</a>
                             </li>
                         </ul>
                     </li>
@@ -56,7 +61,7 @@
                         </a>
                     </li>
                     <li class="text-center row-5-2">
-                        <a>
+                        <a href="#">
                             <i class="icon-evaluacion"></i>
                             <samp>Evaluación</samp>
                         </a>
@@ -96,8 +101,7 @@
 
                     <section class="row">
                         <div class="center text-center">
- 
-                           
+
                             <div class="board-container">
                                 <div class="board-flip">
                                     <div class="board-front">
@@ -161,7 +165,7 @@
                                 <div class="winner-container">
                                     <div class="board-flip">
                                         <div class="board-front">
-                                            <img src="img/user.png" alt="" />
+                                            <img src="../img/user.png" alt="" />
                                         </div>
                                         <div class="board-back">
                                             <div class="board-inner">
@@ -176,7 +180,7 @@
                                 <div class="winner-container">
                                     <div class="board-flip">
                                         <div class="board-front">
-                                            <img src="img/user.png" alt="" />
+                                            <img src="../img/user.png" alt="" />
                                         </div>
                                         <div class="board-back">
                                             <div class="board-inner">
@@ -191,7 +195,7 @@
                                 <div class="winner-container">
                                     <div class="board-flip">
                                         <div class="board-front">
-                                            <img src="img/user.png" alt="" />
+                                            <img src="../img/user.png" alt="" />
                                         </div>
                                         <div class="board-back">
                                             <div class="board-inner">
@@ -206,7 +210,7 @@
                                 <div class="winner-container">
                                     <div class="board-flip">
                                         <div class="board-front">
-                                            <img src="img/user.png" alt="" />
+                                            <img src="../img/user.png" alt="" />
                                         </div>
                                         <div class="board-back">
                                             <div class="board-inner">
@@ -221,7 +225,7 @@
                                 <div class="winner-container">
                                     <div class="board-flip">
                                         <div class="board-front">
-                                            <img src="img/user.png" alt="" />
+                                            <img src="../img/user.png" alt="" />
                                         </div>
                                         <div class="board-back">
                                             <div class="board-inner">
@@ -236,7 +240,6 @@
                             </div>
                         </div>
                     </section> 
-
                     <section class="row center">
                         <div class="top-down">
                             <div class="top-img">
@@ -246,8 +249,33 @@
                                     </div>
                                 </div>
                             </div> 
-                            <p class="col-sm-6" > Si puedes ver tu foto, lamentamos informarte que estás dentro de los 5 CTINeros con pero evaluacion. <br/> <small>No te preocupes aún tienes salvación del fuego eterno. <br/>¡Ponte las pilas chavo! </small> </p>
+                            <p class="col-sm-6" > Si puedes ver tu foto, lamentamos informarte que estás dentro de los 5 CTINeros con peor evaluacion. <br/> <small>No te preocupes aún tienes salvación del fuego eterno. <br/>¡Ponte las pilas chavo! </small> </p>
                         </div>
+                    </section>
+                    <section class=" row">
+                        <h3>Recursos</h3>
+                        <div class="col-lg-12 center-around">
+
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <p>Reglamento CTIN</p>
+                                    <a href="becario-simple.html" download="becario-simple" ><span class="icon-recursos"></span></a>
+                                </div>
+                            </div> 
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <p>Video Ctin</p>
+                                    <a href="becario-simple.html" download="becario-simple"><span class="icon-recursos"></span></a>
+                                </div>
+                            </div> 
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <p>Propuesta Proyecto</p>
+                                    <a href="becario-simple.html" download="becario-simple"><span class="icon-recursos"></span></a>
+                                </div>
+                            </div>
+                        
+                        </div>                 
                     </section>
                     <section class="row">
                         
@@ -310,7 +338,6 @@
                             
                             
                         </div>
-
                     </section>
 
                 </div>
@@ -323,9 +350,9 @@
         <!-- END General Container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
     <!-- rating js -->
-    <script src="js/rating.js"></script>
+    <script src="../js/rating.js"></script>
 
 </body>
 

@@ -1785,7 +1785,8 @@ fieldset {
 
 .chat {
   //background: rgba($azurlRey-ctin, 1);	  
-  background: url(../img/login-bg.svg) center;
+  background: url(../img/login-bg.svg) center ;
+  background-size: cover;
   color: $azul-ctin;
   border-radius: 20px;
   overflow: hidden;

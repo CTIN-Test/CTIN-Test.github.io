@@ -538,6 +538,21 @@ i{
 	//width: 100%;
 }
 
+.center-full{
+	display: flex !important; /* added */
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+	align-content: stretch;
+	//height: 100% !important;
+	//width: 100%;
+	& > li{
+		width: 50%;
+	}
+}
+
 .center-between{
 	display: flex !important; /* added */
 	flex-direction: row;
@@ -850,7 +865,7 @@ $image-size: 20vw;
 
 		.img-container-ss{
 			@extend .img-container;
-			width: 60px;
+			width: 90px;
 			border-color: $rojo-ctin;
 
 			min-width: 50px;
@@ -962,7 +977,7 @@ $image-size: 20vw;
 				}
 			}
 			.img-container-ss{
-				border: solid $azul-ctin 2px;
+				border: solid $azul-ctin 3px;
 				a{
 					color: $rojo-ctin;
 				}
@@ -977,7 +992,7 @@ $image-size: 20vw;
 				}
 			}
 			.img-container-ss{
-				border: solid $rojo-ctin 2px;
+				border: solid $rojo-ctin 3px;
 				a{
 					color: $rojo-ctin;
 				}
@@ -1764,11 +1779,17 @@ fieldset {
 //   background-image: url(../Img/btn-04.svg); 
 // }
 
+//===========================================
+//          		CHAT 
+//===========================================
 
 .chat {
-  background: $gris-claro;
+  //background: rgba($azurlRey-ctin, 1);	  
+  background: url(../img/login-bg.svg) center;
   color: $azul-ctin;
   border-radius: 20px;
+  overflow: hidden;
+  //border: solid 2px $gris;
 		  
 	.chat-header {
 	  //border-bottom: 3px solid white;
@@ -1777,11 +1798,14 @@ fieldset {
 	.chat-history {
 	  // padding: 20px;
 	  overflow-y: scroll;
-	  height: 300px;
+	  height: 400px;
 	  width: 100%;
-	  margin:2vh 0;
+	  //margin: 2% 5%;
+	  background: #e8e8e8;
 
-	  background-color: $blanco;
+	  border-bottom: 5px solid $gris;
+	  border-top: 5px solid $gris;
+
 	  @extend .center;
 	  align-items: flex-start;
 	  
@@ -1797,7 +1821,7 @@ fieldset {
 		li{
 		  	margin: 20px 0px;
 		  	padding: 0 20px;
-		  	width: 90%;
+		  	width: 80%;
 		  	min-width: 200px;
 
 		  	list-style: none;
@@ -1806,8 +1830,9 @@ fieldset {
 		  	background-color: $blanco;
 
 		  	.mesage-area{
-		  		width: 80%;
+		  		width: 95%;
 		  		padding: 5px;
+		  		text-align: justify;
 		  		.message-data-time {
 				  color: $rojo-ctin;
 				  font-family: Andale;
@@ -1827,8 +1852,8 @@ fieldset {
 	.chat-message {
 	  margin: 1vh 0;
 	  textarea {
-		  width: 60%;
-		  height: 100px;
+		  width: 70%;
+		  height: 70px;
 		  border: solid $gris 2px;
 		  padding: 10px 20px;
 		  margin-bottom: 10px;
@@ -1839,7 +1864,46 @@ fieldset {
 	}
 }
 
+//===========================================
+//          	 
+//===========================================
 
+.nav-tabs{
+
+	border: none;
+	li{
+		border: none;
+		border-radius: 0px !important;
+		background-color: transparent;
+		a{
+			background-color: transparent;
+			border: none !important;
+			border-radius: 0px !important;
+			height: 100%;
+			@include transition-mix(0.5s);
+			margin: 0;
+
+
+			&:hover{
+				height: 100%;
+				border: none;
+				background: rgba($azurlRey-ctin, 0.8) !important;
+			}
+		}
+	}
+
+	.active{
+		border: none;
+		a{
+			background: rgba($azurlRey-ctin, 0.95) !important;
+			border: none;
+		}
+	}
+}
+
+.tab-content{
+
+}
 
 
 

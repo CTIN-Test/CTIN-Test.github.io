@@ -1455,6 +1455,136 @@ fieldset {
 }
 
 
+//===========================================
+//          		CHAT 
+//===========================================
+
+.chat {
+  //background: rgba($azurlRey-ctin, 1);	  
+  background: url(../img/login-bg.svg) center ;
+  background-size: cover;
+  color: $azul-ctin;
+  border-radius: 20px;
+  overflow: hidden;
+  //border: solid 2px $gris;
+		  
+	.chat-header {
+	  //border-bottom: 3px solid white;
+	}
+
+	.chat-history {
+	  // padding: 20px;
+	  overflow-y: scroll;
+	  height: 400px;
+	  width: 100%;
+	  //margin: 2% 5%;
+	  background: #e8e8e8;
+
+	  border-bottom: 5px solid $gris;
+	  border-top: 5px solid $gris;
+
+	  @extend .center;
+	  align-items: flex-start;
+	  flex-wrap: nowrap;
+
+	  
+	  ul{
+	  	width: 100%;
+	  	@extend .center;
+
+	  	.active{
+	  		border-color: $active;
+	  		border-width: 5px;
+	  	}
+
+		li{
+		  	margin: 20px 0px;
+		  	padding: 0 20px;
+		  	width: 80%;
+		  	min-width: 200px;
+
+		  	list-style: none;
+		  	border: solid $azurlRey-ctin 2px;
+		  	border-radius: 15px;
+		  	background-color: $blanco;
+
+		  	.mesage-area{
+		  		width: 95%;
+		  		padding: 5px;
+		  		text-align: justify;
+		  		.message-data-time {
+				  color: $rojo-ctin;
+				  font-family: Andale;
+				  border-bottom: solid $azul-ctin 2px;
+				}
+
+				.message {
+				  color: $negro;
+				  font-family: Lato;
+				}
+		  	}
+
+		  }
+		}
+	  }
+
+	.chat-message {
+	  margin: 1vh 0;
+	  textarea {
+		  width: 70%;
+		  height: 70px;
+		  border: solid $gris 2px;
+		  padding: 10px 20px;
+		  margin-bottom: 10px;
+		  border-radius: 20px;
+		  resize: none;
+		  color: $gris;
+		}
+	}
+}
+
+//===========================================
+//          	 Nav-tabs
+//===========================================
+
+.nav-tabs{
+
+	border: none;
+	li{
+		border: none;
+		border-radius: 0px !important;
+		background-color: transparent;
+		a{
+			background-color: transparent;
+			border: none !important;
+			border-radius: 0px !important;
+			height: 100%;
+			@include transition-mix(0.5s);
+			margin: 0;
+
+
+			&:hover{
+				height: 100%;
+				border: none;
+				background: rgba($gris-claro - 10, 0.5) !important;
+			}
+		}
+	}
+
+	.active{
+		border: none;
+		a{
+			background: rgba($gris-claro - 10, 0.7) !important;
+			border: none;
+		}
+	}
+}
+
+.tab-content{
+
+}
+
+
 // ====================================
 //            Responsive
 // ====================================
@@ -1731,185 +1861,6 @@ fieldset {
 
 
 
-
-
-//===========================================
-//          Costum checkbox  
-//===========================================
-// input[type=checkbox] {
-//   display: none;
-// }
-// /* 
-// - Style each label that is directly after the input
-// - position: relative; will ensure that any position: absolute children will position themselves in relation to it
-// */
-// input[type=checkbox] + label {
-//   height: 30px;
-//   width: 30px;
-//   background-image: url(../Img/btn-01.svg); 
-//   background-repeat: no-repeat;
-//   background-size: auto auto;
-//   background-position: 0px 0px;
-//   position: relative;
-//   @include transition-mix(0.4s);
-// }
-
-// /* Provide a border when hovered and when the checkbox before it is checked */
-// input[type=checkbox]:checked + label,
-// input[type=checkbox]:checked + label:hover {
-//   background-image: url(../Img/btn-02.svg); 
-// }
-
-// input[type=checkbox] + label:hover {
-//   background-image: url(../Img/btn-03.svg); 
-// }
-
-
-// input[type=checkbox]:disabled + label:hover,
-// input[type=checkbox]:disabled  + label {
-//   background-image: url(../Img/btn-04.svg); 
-// }
-
-// /* 
-// - Create a pseudo element :after when checked and provide a tick
-// - Center the content
-// */
-// input[type=checkbox]:checked + label:after {
-//   background-image: url(../Img/btn-02.svg); 
-// }
-
-// input[type=checkbox]:disabled + label:after {
-//   background-image: url(../Img/btn-04.svg); 
-// }
-
-//===========================================
-//          		CHAT 
-//===========================================
-
-.chat {
-  //background: rgba($azurlRey-ctin, 1);	  
-  background: url(../img/login-bg.svg) center ;
-  background-size: cover;
-  color: $azul-ctin;
-  border-radius: 20px;
-  overflow: hidden;
-  //border: solid 2px $gris;
-		  
-	.chat-header {
-	  //border-bottom: 3px solid white;
-	}
-
-	.chat-history {
-	  // padding: 20px;
-	  overflow-y: scroll;
-	  height: 400px;
-	  width: 100%;
-	  //margin: 2% 5%;
-	  background: #e8e8e8;
-
-	  border-bottom: 5px solid $gris;
-	  border-top: 5px solid $gris;
-
-	  @extend .center;
-	  align-items: flex-start;
-	  flex-wrap: nowrap;
-
-	  
-	  ul{
-	  	width: 100%;
-	  	@extend .center;
-
-	  	.active{
-	  		border-color: $active;
-	  		border-width: 5px;
-	  	}
-
-		li{
-		  	margin: 20px 0px;
-		  	padding: 0 20px;
-		  	width: 80%;
-		  	min-width: 200px;
-
-		  	list-style: none;
-		  	border: solid $azurlRey-ctin 2px;
-		  	border-radius: 15px;
-		  	background-color: $blanco;
-
-		  	.mesage-area{
-		  		width: 95%;
-		  		padding: 5px;
-		  		text-align: justify;
-		  		.message-data-time {
-				  color: $rojo-ctin;
-				  font-family: Andale;
-				  border-bottom: solid $azul-ctin 2px;
-				}
-
-				.message {
-				  color: $negro;
-				  font-family: Lato;
-				}
-		  	}
-
-		  }
-		}
-	  }
-
-	.chat-message {
-	  margin: 1vh 0;
-	  textarea {
-		  width: 70%;
-		  height: 70px;
-		  border: solid $gris 2px;
-		  padding: 10px 20px;
-		  margin-bottom: 10px;
-		  border-radius: 20px;
-		  resize: none;
-		  color: $gris;
-		}
-	}
-}
-
-//===========================================
-//          	 
-//===========================================
-
-.nav-tabs{
-
-	border: none;
-	li{
-		border: none;
-		border-radius: 0px !important;
-		background-color: transparent;
-		a{
-			background-color: transparent;
-			border: none !important;
-			border-radius: 0px !important;
-			height: 100%;
-			@include transition-mix(0.5s);
-			margin: 0;
-
-
-			&:hover{
-				height: 100%;
-				border: none;
-				background: rgba($azurlRey-ctin, 0.8) !important;
-			}
-		}
-	}
-
-	.active{
-		border: none;
-		a{
-			background: rgba($azurlRey-ctin, 0.95) !important;
-			border: none;
-		}
-	}
-}
-
-.tab-content{
-
-}
 
 
 

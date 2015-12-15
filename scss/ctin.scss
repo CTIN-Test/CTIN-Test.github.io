@@ -1402,6 +1402,9 @@ $image-size: 20vw;
 	color:  $blanco;
 	background-color: $btn-normal;
 	font-weight: normal;
+	width: 60px;
+	min-width: 70px !important;
+
 	@include transition-mix(0.5s);
 
 	&:hover, &:focus{
@@ -1589,7 +1592,7 @@ fieldset {
 
 
 	.top-down{
-		max-width: 150px;
+		max-width: 120px;
 		max-height: 500px;
 
 		border-radius: 200px;
@@ -1809,6 +1812,8 @@ fieldset {
 
 	  @extend .center;
 	  align-items: flex-start;
+	  flex-wrap: nowrap;
+
 	  
 	  ul{
 	  	width: 100%;

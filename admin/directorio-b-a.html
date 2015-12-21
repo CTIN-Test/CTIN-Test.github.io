@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CTIN | Centro de Tecnología e Innovación</title>
+
+    <!-- Normalize CSS -->
+    <link href="../css/normalize.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/ctin.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="container">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top">
+            
+            <!-- Header logo -->
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <img class="logo" src="../img/logo.svg">
+                </a>
+            </div> <!-- END Header logo -->
+
+            <!-- Sidebar Menu Items -->
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav side-nav ">
+
+                    <li class="text-center row-4-2 active">
+                        <a href="home.html">
+                            <i class="icon-home"></i>
+                            <samp>Inicio</samp>
+                        </a>
+                        <ul id="sub-menu">
+                            <li  class=" text-center row-8">
+                                <a href="../index.html">Log Out</a>
+                            </li>
+                            <li  class=" text-center row-8">
+                                <a href="buzon.html">Buzon</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="text-center row-4">
+                        <a href="becario.html"> 
+                            <i class="icon-estadisticas"></i>
+                            <samp>Graficas</samp>
+                        </a>
+                    </li>
+                    
+                    <li class="text-center row-4">
+                        <a href="directorio-b-a.html">
+                            <i class="icon-d_becarios"></i>
+                            <samp>Becarios</samp>
+                        </a>
+                    </li>
+                    <li class="text-center row-4">
+                        <a href="projects.html">
+                            <i class="icon-d_proyectos"></i>
+                            <samp>Proyectos</samp>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Sidebar Menu Items  -->
+        </nav> <!-- End  Navigation-->
+
+        <!-- General Container -->
+        <div class="page-wrapper">
+            <section class="row">
+                <div class="general-info col-lg-8 col-lg-offset-2">
+                    <h3>Directorio Becarios</h3>
+
+                    <section class="row center-around">
+                        <!-- Alta becario trigger modal -->
+                        <button type="button" class="btn xl-btn" data-toggle="modal" data-target="#AltaModal">   
+                          <i class="icon-circulo_mas icon-l"></i>   Alta
+                        </button>
+
+                        <!-- Alta becario Modal -->
+                        <div class="modal fade" id="AltaModal" tabindex="-1" role="dialog" aria-labelledby="AltaModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="AltaModalLabel">Alta Becario</h4>
+                              </div>
+                              <div class="modal-body form-group col-lg-12">
+                                    <div class="between-form form-group">
+                                        <label>Nombre(s)</label>
+                                        <input type="text" class="form-control"  placeholder="Nombres">
+                                    </div>
+                                    <div class="between-form form-group">
+                                        <label>Apellido Paterno</label>
+                                        <input type="text" class="form-control"  placeholder="Apellido Parerno">
+                                    </div>
+                                    <div class="between-form form-group">
+                                        <label>Apellido Materno</label>
+                                        <input type="text" class="form-control" placeholder="Apellido Materno">
+                                    </div>
+                                    <div class="between-form form-group">
+                                        <label>No. Becario</label>
+                                        <input type="text" class="form-control" placeholder="No. Becario">
+                                    </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Crear</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Baja Becario trigger modal -->
+                        <button type="button" class="btn xl-btn" data-toggle="modal" data-target="#BajaModal">   
+                          <i class="icon-circulo_tache icon-l"></i>   Baja
+                        </button>
+
+                        <!-- Alta becario Modal -->
+                        <div class="modal fade" id="BajaModal" tabindex="-1" role="dialog" aria-labelledby="BajaModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="BajaModalLabel">Alta Becario</h4>
+                              </div>
+                              <div class="modal-body form-group col-lg-12">
+                                    <div class="between-form form-group">
+                                        <label>No. Becario</label>
+                                        <input type="text" class="form-control" placeholder="No. Becario">
+                                    </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Crear</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </section>
+
+                    <!-- Tabla Becario -->
+                    <table id="fresh-table" class="table table-hover">
+                                <thead>
+                                    <th>Perfil</th>
+                                    <th data-field="ID Becario" data-sortable="true">ID Becario</th>
+                                    <th data-field="nombre" data-sortable="true">Nombre</th>
+                                    <th data-field="area" data-sortable="true">Area</th>
+                                    <th data-field="carrera" data-sortable="true">Carrera</th>
+                                    <th data-field="e-mail" data-sortable="true">E-mail</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="becario-simple.html"> 
+                                                <i class="icon-user icon-l"></i>
+                                            </a>
+                                        </td>
+                                        <td>759193</td>
+                                        <td>Miguel Ruiz</td>
+                                        <td>Ing. Software</td>
+                                        <td>Ing. en Mecatrónica</td>
+                                        <td>miguel.ruiz@ctinmx.com</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>Philip Chaney</td>
+                                        <td>$38,735</td>
+                                        <td>Korea, South</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>Doris Greene</td>
+                                        <td>$63,542</td>
+                                        <td>Malawi</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>2</td>
+                                        <td>Mason Porter</td>
+                                        <td>$78,615</td>
+                                        <td>Chile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>2</td>
+                                        <td>Alden Chen</td>
+                                        <td>$63,929</td>
+                                        <td>Finland</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>Colton Hodges</td>
+                                        <td>$93,961</td>
+                                        <td>Nicaragua</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>2</td>
+                                        <td>Illana Nelson</td>
+                                        <td>$56,142</td>
+                                        <td>Heard Island</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>2</td>
+                                        <td>Nicole Lane</td>
+                                        <td>$93,148</td>
+                                        <td>Cayman Islands</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>2</td>
+                                        <td>Chaim Saunders</td>
+                                        <td>$5,502</td>
+                                        <td>Romania</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>2</td>
+                                        <td>Josiah Simon</td>
+                                        <td>$50,265</td>
+                                        <td>Christmas Island</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>2</td>
+                                        <td>Ila Poole</td>
+                                        <td>$67,413</td>
+                                        <td>Montenegro</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>2</td>
+                                        <td>Shana Mejia</td>
+                                        <td>$58,566</td>
+                                        <td>Afghanistan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>2</td>
+                                        <td>Lana Ryan</td>
+                                        <td>$64,151</td>
+                                        <td>Martinique</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>2</td>
+                                        <td>Daquan Bender</td>
+                                        <td>$91,906</td>
+                                        <td>Sao Tome and Principe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>2</td>
+                                        <td>Connor Wagner</td>
+                                        <td>$86,537</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>2</td>
+                                        <td>Boris Horton</td>
+                                        <td>$35,094</td>
+                                        <td>Laos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>2</td>
+                                        <td>Winifred Ryan</td>
+                                        <td>$64,436</td>
+                                        <td>Ireland</td>
+                                    </tr>
+                                </tbody>
+                    </table>
+                </div><!-- General User data -->
+            </section>
+        </div>
+        <!-- END General Container -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Bootstrap-table js -->
+<script src="../js/bootstrap-table.js"></script>
+<!-- Table script -->
+<script type="text/javascript">
+        var $table = $('#fresh-table'),
+            full_screen = false;
+            
+        $().ready(function(){
+            $table.bootstrapTable({
+                toolbar: ".toolbar",
+                showRefresh: false,
+                search: true,
+                showToggle: false,
+                showColumns: false,
+                pagination: true,
+                striped: true,
+                pageSize: 8,
+                pageList: [8,10,25,50,100],
+                formatSearch: function(){
+                    return "Buscar";
+                },
+                formatShowingRows: function(pageFrom, pageTo, totalRows){
+                    return "Total de becarios " + totalRows
+                },
+                formatRecordsPerPage: function(pageNumber){
+                    return pageNumber + " filas visibles";
+                }
+            });
+        });     
+</script>
+
+</body>
+
+</html>

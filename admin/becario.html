@@ -11,8 +11,7 @@
 
     <title>CTIN | Centro de Tecnología e Innovación</title>
 
-    <!-- Normalize CSS -->
-    <link href="../css/normalize.css" rel="stylesheet">
+    
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -20,12 +19,13 @@
     <!-- Custom Fonts -->
     <link href="../fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
 
+       <!--      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 
 </head>
 
 <body class="container">
 
-         <!-- Navigation -->
+        <!-- Navigation -->
         <nav class="navbar navbar-fixed-top">
             
             <!-- Header logo -->
@@ -38,7 +38,7 @@
             <!-- Sidebar Menu Items -->
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav side-nav ">
-
+                
                     <li class="text-center row-5-2">
                         <a href="home.html">
                             <i class="icon-home"></i>
@@ -54,7 +54,7 @@
                         </ul>
                     </li>
 
-                    <li class="text-center row-5">
+                    <li class="text-center row-5 active">
                         <a href="becario.html"> 
                             <i class="icon-user"></i>
                             <samp>Perfil</samp>
@@ -75,7 +75,7 @@
                         </ul>
                     </li>
                     
-                    <li class="text-center row-5 active">
+                    <li class="text-center row-5">
                         <a href="directorio-b.html">
                             <i class="icon-d_becarios"></i>
                             <samp>Becarios</samp>
@@ -94,39 +94,78 @@
 
         <!-- General Container -->
         <div class="page-wrapper">
-
-            <!-- Generl Row -->
-
                 <!-- General User data -->
                 <div class="general-info col-sm-10 col-sm-offset-1">
 
-                     <section class=" info-header row between-form">
-                        <div class="col-md-5 img-general-link">
+                    <section class=" info-header row between-form">
+                        <div class="col-md-4 img-general-link">
                             <div class="img-container-l">
                                 <img class=" " src="../img/user.png">
+                                <a href="b-settings.html"><span class="icon-engranes"></span></a>
                             </div>
                             <fieldset class="rating" data-rate ="3"></fieldset>
                         </div>
-                        <div class="col-md-6 ">
+                        <div class="col-md-7 ">
                             <h3>Miguel A. Ruiz Galvez</h3>
-                            <div class="col-lg-12 principal-info inline-form">
-                                <a><i class="icon-sobre icon-l"></i>miguelo.ctin@gmail.com</a>
-                                <a><i class="icon-d_proyectos icon-l"></i> Sotware</a>
-                            </div>
-                            <p><b>Universidad: </b> Universidad Nacional Autonoma de México, Facultad de Ingeniería</p> 
-                            <p><b>Carrera: </b>Ing. Mecatrónica</p> 
-                            <p><b>Descripción: </b>Bacon ipsum dolor amet chicken kielbasa spare ribs tenderloin sausage filet mignon, capicola fatback salami tail tongue. Venison doner leberkas ribeye sirloin strip steak short loin. Alcatra capicola prosciutto, spare ribs flank tri-tip doner. Fatback ground round pastrami strip steak beef ribs. Rump salami short ribs ham, cow bacon shank. Spare ribs rump flank pig drumstick pork chop..</p>
+                            <p><b>Carrera: </b> Ingeniería Mecatrónica</p> 
+                            <p><b>Universidad: </b> UNAM, Facultad de Ingeniería</p> 
+                            <p><b>Habilidades: </b>Bacon ipsum dolor amet chicken kielbasa spare ribs tenderloin sausage filet mignon, capicola fatback salami tail tongue. Venison doner leberkas ribeye sirloin strip steak short loin. Alcatra capicola prosciutto, spare ribs flank tri-tip doner. Fatback ground round pastrami strip steak beef ribs. Rump salami short ribs ham, cow bacon shank. Spare ribs rump flank pig drumstick pork chop..</p>
                         </div>
                     </section>
 
+                    <section class="row">
+                            <h4>Desempeño</h4>
+                            <div class="metrics-box">
+                                <div class="metrics">
+                                    <div class="data">
+                                        <span class="counter">36</span><b>hrs</b>
+                                    </div>
+                                    <h5>Asistencia</h5>
+                                </div>
+                                <div class="metrics">
+                                    <div class="data">
+                                        <span class="counter">85</span><b>pts</b>
+                                    </div>
+                                    <h5>Evaluación</h5>
+                                </div>
+                                <div class="metrics">
+                                    <div class="data">
+                                        <span class="counter">75.6</span><b>%</b>
+                                    </div>
+                                    <h5>Eficiencia</h5>
+                                </div>
+                            </div>
+
+                             <table class=" table table-hover col-xs-12 metrics-table" >
+                                <thead>
+                                    <tr>
+                                        <th>Constancia</th>
+                                        <th>Puntualidad</th>
+                                        <th>Colaboración</th>
+                                        <th>Proactividad</th>
+                                        <th>Enseñanza</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="counter">86</td>
+                                        <td class="counter">50</td>
+                                        <td class="counter">78</td>
+                                        <td class="counter">89</td>
+                                        <td class="counter">61</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </section>
+
                     <section class=" row">
-                        <h3>Proyectos</h3>
+                        <h4>Mis Proyectos</h4>
                         <div class="col-lg-12 center-around">
 
                             <div class="img-general-link">
                                 <div class="img-container-s  progress-0">
                                     <img class=" " src="../img/project.png">
-                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                    <a href="p-settings.html"><span class="icon-d_proyectos"></span></a>
                                 </div>
                                 <h5> <small>CTIN</small> </h5>
                                 <h5>Apuntate</h5>
@@ -134,7 +173,7 @@
                             <div class="img-general-link">
                                 <div class="img-container-s  progress-30">
                                     <img class=" " src="../img/project.png">
-                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                    <a href="p-settings.html"><span class="icon-d_proyectos"></span></a>
                                 </div>
                                 <h5> <small>CTIN</small> </h5>
                                 <h5>Apuntate</h5>
@@ -142,7 +181,7 @@
                             <div class="img-general-link">
                                 <div class="img-container-s  progress-60">
                                     <img class=" " src="../img/project.png">
-                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                    <a href="p-settings.html"><span class="icon-d_proyectos"></span></a>
                                 </div>
                                 <h5> <small>CTIN</small> </h5>
                                 <h5>Apuntate</h5>
@@ -150,7 +189,7 @@
                             <div class="img-general-link">
                                 <div class="img-container-s  progress-100">
                                     <img class=" " src="../img/project.png">
-                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                    <a href="p-settings.html"><span class="icon-d_proyectos"></span></a>
                                 </div>
                                 <h5> <small>CTIN</small> </h5>
                                 <h5>Apuntate</h5>
@@ -158,17 +197,43 @@
                             
                         </div>
                     </section>
-
                 </div><!-- General User data -->
                 
             <!-- END Generl  -->
 
         </div>
         <!-- END General Container -->
+
+    
+    <!-- /#wrapper -->
+
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
+    <!-- Waypoints js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- Counterup js -->
+    <script src="../js/jquery.counterup.min.js"></script>
     <!-- rating js -->
     <script src="../js/rating.js"></script>
+    <!-- Counterup script -->
+    <script>
+        jQuery(document).ready(function($) {
+
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+
+             $( "rating" ).each(function() {
+                console.log("hola");
+              var array_input = $( this ).find( "input" );
+              index = ($( this ).attr('data-rate')-5) * -1;
+              $(array_input[index]).attr('checked', true);
+              $( "rating > input:checked ~ label" ).addClass("active");
+            });
+
+        });
+    </script>
 
 </body>
 

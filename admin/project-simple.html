@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CTIN | Centro de Tecnología e Innovación</title>
+
+    <!-- Normalize CSS -->
+    <link href="../css/normalize.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/ctin.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
+    <!-- Morris CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+</head>
+
+<body class="container">
+ 
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top">
+            
+            <!-- Header logo -->
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <img class="logo" src="../img/logo.svg">
+                </a>
+            </div> <!-- END Header logo -->
+
+            <!-- Sidebar Menu Items -->
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav side-nav ">
+
+                    <li class="text-center row-4-2 active">
+                        <a href="home.html">
+                            <i class="icon-home"></i>
+                            <samp>Inicio</samp>
+                        </a>
+                        <ul id="sub-menu">
+                            <li  class=" text-center row-8">
+                                <a href="../index.html">Log Out</a>
+                            </li>
+                            <li  class=" text-center row-8">
+                                <a href="buzon.html">Buzon</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="text-center row-4">
+                        <a href="becario.html"> 
+                            <i class="icon-estadisticas"></i>
+                            <samp>Graficas</samp>
+                        </a>
+                    </li>
+                    
+                    <li class="text-center row-4">
+                        <a href="directorio-b-a.html">
+                            <i class="icon-d_becarios"></i>
+                            <samp>Becarios</samp>
+                        </a>
+                    </li>
+                    <li class="text-center row-4">
+                        <a href="projects.html">
+                            <i class="icon-d_proyectos"></i>
+                            <samp>Proyectos</samp>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Sidebar Menu Items  -->
+        </nav> <!-- End  Navigation -->
+
+        <!-- General Container -->
+        <div class="page-wrapper">
+
+                <!-- General User data -->
+                <div class="general-info col-sm-8  col-sm-offset-2">
+
+
+                    <section class=" info-header row between-form">
+                        <div class="col-md-4 img-general-link">
+                            <div class="img-container-l progress-60">
+                                <img class=" " src="../img/project.png">
+                                <a href="p-settings.html"><span class="icon-engranes"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 principal-info">
+                            <h3>Apuntate</h3>
+                            <h5>Proyecto CTIN</h5>
+                            <h6>25 FEB 2015 / <span class="active">Activo</span> </h6>
+                            <h6>25 FEB 2015 / <span class="inactive">TErmino estimado</span> </h6>
+                            <p><b>Descripción: </b>Bacon ipsum dolor amet chicken kielbasa spare ribs tenderloin sausage filet mignon, capicola fatback salami tail tongue. Venison doner leberkas ribeye sirloin strip steak short loin. Alcatra capicola prosciutto, spare ribs flank tri-tip doner. Fatback ground round pastrami strip steak beef ribs. Rump salami short ribs ham, cow bacon shank. Spare ribs rump flank pig drumstick pork chop..</p>
+                        </div>
+                    </section>
+                
+                    <section class=" row">
+                        <h4>Integrantes</h4>
+                        <div class="col-lg-12 center-around">
+
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <img class=" " src="../img/user.png">
+                                    <a href="becario-simple.html"><span class="icon-user"></span></a>
+                                </div>
+                                <h5><small>Software</small></h5>
+                                <h5>Miguel Angel Ruiz Gálvez</h5>
+                                <h5><small>Ing. Mecatrónico</small></h5>
+                            </div> 
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <img class=" " src="../img/user.png">
+                                    <a href="becario-simple.html"><span class="icon-user"></span></a>
+                                </div>
+                                <h5><small>Software</small></h5>
+                                <h5>Miguel Angel Ruiz Gálvez</h5>
+                                <h5><small>Ing. Mecatrónico</small></h5>
+                            </div> 
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <img class=" " src="../img/user.png">
+                                    <a href="becario-simple.html"><span class="icon-user"></span></a>
+                                </div>
+                                <h5><small>Software</small></h5>
+                                <h5>Miguel Angel Ruiz Gálvez</h5>
+                                <h5><small>Ing. Mecatrónico</small></h5>
+                            </div>
+                        </div>                 
+                    </section>
+
+                    <section class="row">
+                        <h4>Desempeño del equipo</h4>
+                        <div class="metrics-box">
+                                <div class="metrics">
+                                    <div class="data">
+                                        <span class="counter">400</span><b>hrs</b>
+                                    </div>
+                                    <h5>Total de Horas</h5>
+                                </div>
+                            </div>
+                        <div class="chart-full" id="desempeño-proyecto"></div>
+                    </section>
+
+                    <section class=" row">
+                        <h4>Recursos</h4>
+                        <div class="col-lg-12 center-around">
+
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <p>Logo</p>
+                                    <a href="becario-simple.html" download="becario-simple" ><span class="icon-recursos"></span></a>
+                                </div>
+                            </div> 
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <p>Infografía</p>
+                                    <a href="becario-simple.html" download="becario-simple"><span class="icon-recursos"></span></a>
+                                </div>
+                            </div> 
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <p>Presnetación</p>
+                                    <a href="becario-simple.html" download="becario-simple"><span class="icon-recursos"></span></a>
+                                </div>
+                            </div>
+                            <div class="img-general-link">
+                                <div class="img-container-s">
+                                    <p>Plan de Tabajo</p>
+                                    <a href="becario-simple.html" download="becario-simple"><span class="icon-recursos"></span></a>
+                                </div>
+                            </div> 
+                        
+                        </div>                 
+                    </section>
+
+                </div><!-- General User data -->
+                
+            <!-- END Generl  -->
+
+        </div>
+        <!-- END General Container -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+<!-- Raphael js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<!-- Morris js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script type="text/javascript">
+    Morris.Bar({
+      element: 'desempeño-proyecto',
+      data: [
+        {x: 'Enero', miguelo: 3, Luis: 2, a: 3.5},
+        {x: 'Febrero', miguelo: 2, Luis: 0, a: 1},
+        {x: 'Marzo', miguelo: 0, Luis: 2, a: 4},
+        {x: 'Abril', miguelo: 13, Luis: 4, a: 3}
+      ],
+      xkey: 'x',
+      ykeys: [ 'a', 'Luis','miguelo'],
+      labels: ['Paco Pelotas', 'Luis Sanchez','Miguel Ruiz'],
+      stacked: true,
+      resize:true
+    });
+</script>
+
+</body>
+
+</html>

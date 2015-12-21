@@ -364,7 +364,7 @@ i{
 		    		width: 100%;
 		    		height: 100%;
 		    		background-color: transparent;
-		    		display: block;
+		    		
 		    		i{
 		    			@include transition-mix(0.5s);
 		    			color: $blanco;
@@ -389,6 +389,8 @@ i{
 	        					text-decoration: none;
 	        					color: $blanco;
 		        				font-size: 12px;
+		        				vertical-align: center;
+		        				padding: 45% 0;
 	        				}
 	        				&:hover,&:focus{
 	        					background-color: $azul-ctin - 100;
@@ -488,8 +490,7 @@ i{
 
 		.form-group{
 			width: 80%;
-			margin-left: 10%;
-			margin-right: 10%; 
+			margin:0 10%;
 			margin-top: 0px;
 
 			.form-control{
@@ -595,7 +596,6 @@ i{
 	align-items: center;
 	justify-content: flex-end;
 	padding: 0 10%;
-
 }
 
 .inline-block{
@@ -617,11 +617,24 @@ i{
 	width: 100%;
 }
 
+.nopading{
+	padding: 0;
+}
+
 .column-form{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.chart-full{
+	width: 100%;
+	min-height: 250px;
+	height: 20vh;
+	min-height: 200px;
+	max-height: 400px;
+
 }
 
 .bg-azul-ctin{
@@ -830,7 +843,7 @@ $image-size: 20vw;
 		    	img{
 		    		opacity: 1;
 		    		@include blur(1px);
-		    		border-width: 10px;
+		    		//border-width: 10px;
 		    	}
 		    	a{
 		    		opacity: 1; /* added */
@@ -1402,10 +1415,14 @@ $image-size: 20vw;
 	color:  $blanco;
 	background-color: $btn-normal;
 	font-weight: normal;
-	width: 60px;
 	min-width: 70px !important;
+	vertical-align: middle;
 
 	@include transition-mix(0.5s);
+
+	i{
+		vertical-align: middle;
+	}
 
 	&:hover, &:focus{
 		background-color: $btn-hover;
@@ -1414,14 +1431,17 @@ $image-size: 20vw;
 }
 
 .btn-max-margin{
-	margin-left: 60px;
-	margin-right: 60px;
+	margin:0 60px;
 }
 
 .btn-xl{
 	display: inline-block !important;
-	margin-left: 70px;
-	margin-right: 70px;
+	margin: 0 70px;
+}
+
+.xl-btn{
+	min-width: 150px !important;
+	margin: 0 10px !important;
 }
 
 // ====================================
@@ -1650,7 +1670,6 @@ fieldset {
 						padding: 0;
 						margin: 0;
 						width: 100%;
-						height: $nav-height;
 						background-color: transparent;
 						display: flex;
 						justify-content: center;
@@ -1679,17 +1698,23 @@ fieldset {
 	        			@include transition-mix(0.5s);
 	        			li{
 	        				width: 100%;
-	        				height: $nav-height / 2;
 	        				list-style-type: none;
 	        				margin: 0;
 	        				padding: 0;
+
+	        				display: flex !important; /* added */
+							flex-direction: row;
+							flex-wrap: nowrap;
+						    align-items: center;
+							justify-content: center;
+
 	        				a{	
-	        					margin: 0;
-	        					height: $nav-height /2 ;
 	        					text-decoration: none;
 	        					font-size: 12px;
 	        					color: $blanco;
-	        					margin: 0;
+	        					width: 100%;
+	        					height: 100%;
+
 	        				}
 	        				&:hover,&:focus{
 	        					background-color: $azul-ctin - 100;
@@ -1815,6 +1840,24 @@ fieldset {
 					  }
 
 					}
+
+
+					.row-4{
+						a{
+							margin: 30px 0px;
+						}
+					}
+
+					.row-4-2{
+				    	height: $aside-height/4;
+				    	padding: 5vh 0px;
+				    	a{
+							margin: 30px 0px;
+						}
+				    	&:hover,&:focus{
+				    		height: ($aside-height/4)*2;
+				    	}
+				    }
 
 				    .row-5-2{
 				    	height: $aside-height/5;

@@ -25,9 +25,9 @@
 
 <body class="container">
 
-         <!-- Navigation -->
+        <!-- Navigation -->
         <nav class="navbar navbar-fixed-top">
-            
+
             <!-- Header logo -->
             <div class="navbar-header">
                 <a class="navbar-brand">
@@ -39,50 +39,36 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav side-nav ">
 
-                    <li class="text-center row-5-2">
-                        <a href="home.html">
+                    <li class="text-center row-4-2 active">
+                        <a href="../admin/index.html">
                             <i class="icon-home"></i>
                             <samp>Inicio</samp>
                         </a>
                         <ul id="sub-menu">
-                            <li  class=" text-center row-10">
+                            <li  class=" text-center row-8">
                                 <a href="../index.html">Log Out</a>
                             </li>
-                            <li  class=" text-center row-10">
+                            <li  class=" text-center row-8">
                                 <a href="buzon.html">Buzon</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="text-center row-5">
-                        <a href="becario.html"> 
-                            <i class="icon-user"></i>
-                            <samp>Perfil</samp>
+                    <li class="text-center row-4">
+                        <a href="../admin/contenidos.html">
+                            <i class="icon-engranes"></i>
+                            <samp>Contenidos</samp>
                         </a>
                     </li>
-                    <li class="text-center row-5-2">
-                        <a href="#">
-                            <i class="icon-evaluacion"></i>
-                            <samp>Evaluación</samp>
-                        </a>
-                        <ul id="sub-menu">
-                            <li  class=" text-center row-10">
-                                <a href="eva-personal.html">Personal</a>
-                            </li>
-                            <li class=" text-center row-10">
-                                <a href="eva-projects.html">Equipo</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="text-center row-5 active">
-                        <a href="directorio-b.html">
+
+                    <li class="text-center row-4">
+                        <a href="../admin/directorio-b-a.html">
                             <i class="icon-d_becarios"></i>
                             <samp>Becarios</samp>
                         </a>
                     </li>
-                    <li class="text-center row-5">
-                        <a href="projects.html">
+                    <li class="text-center row-4">
+                        <a href="../admin/projects.html">
                             <i class="icon-d_proyectos"></i>
                             <samp>Proyectos</samp>
                         </a>
@@ -90,7 +76,7 @@
                 </ul>
             </div>
             <!-- END Sidebar Menu Items  -->
-        </nav> <!-- End  Navigation-->
+        </nav> <!-- End  Navigation -->
 
         <!-- General Container -->
         <div class="page-wrapper">
@@ -131,95 +117,108 @@
 
                           <!-- Tab panes -->
                         <div class="tab-content col-sm-12 ">
-                                <div role="tabpanel" class="tab-pane active" id="General">
-                                    <div class="between-form form-group">
-                                        <label>Genero</label>
-                                        <h6>Masculino</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>No. Becario</label>
-                                        <h6>1234567</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Tarjeta Inbursa</label>
-                                        <h6>1234567123123123</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Examen Propedeutico</label>
-                                        <h6>No se los parametros que aqui</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Fecha de Inicio</label>
-                                        <h6>15 / 04 / 2015</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Fecha de Terminio</label>
-                                        <h6>-- / -- / --</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Status</label>
-                                        <h6>Activo</h6>
-                                    </div>
+                                <div role="tabpanel center" class="tab-pane active" id="General">
+                                  <table class="data-table">
+                                    <tbody>
+                                        <tr>
+                                          <td>Genero</td>
+                                          <td>Masculino</td>
+                                        </tr>
+                                        <tr>
+                                          <td>No. Becario</td>
+                                          <td>1234567</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Tarjeta Inbursa</td>
+                                          <td>1234567123123123</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Examen Propedeutico</td>
+                                          <td>No se los parametros que aqui</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Fecha de Inicio</td>
+                                          <td>15 / 04 / 2015</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Fecha de Terminio</td>
+                                          <td>-- / -- / --</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Status</td>
+                                          <td>Activo</td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Contacto">
-                                    <div class="between-form form-group">
-                                        <label>Calle</label>
-                                        <h6>Colorines</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Numero</label>
-                                        <h6>40</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Colonia</label>
-                                        <h6>Arcos del Alba</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Municipio o Delegacion</label>
-                                        <h6>Cuautitlán Izaclli</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Estado</label>
-                                        <h6>Estado de México</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Telefono</label>
-                                        <h6>1234567</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Contacto de Emergencia</label>
-                                        <h6>Nombre aqui</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Parentesco</label>
-                                        <h6>Tutor</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Telefono Emergencia</label>
-                                        <h6>58675645</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Tipo de Sangre</label>
-                                        <h6>------</h6>
-                                    </div>
+                                <div role="tabpanel center" class="tab-pane" id="Contacto">
+                                  <table class="data-table">
+                                    <tbody>
+                                        <tr>
+                                          <td>Calle</td>
+                                          <td>Colorines</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Numero</td>
+                                          <td>40</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Colonia</td>
+                                          <td>Arcos del Alba</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Municipio o Delegacion</td>
+                                          <td>Cuautitlán Izaclli</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Estado</td>
+                                          <td>Estado de México</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Telefono</td>
+                                          <td>1234567</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Contacto de Emergencia</td>
+                                          <td>Nombre aqui</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Parentesco</td>
+                                          <td>Tutor</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Telefono Emergencia</td>
+                                          <td>58675645</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Tipo de Sangre</td>
+                                          <td>------</td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
+
                                 <div role="tabpanel" class="tab-pane" id="Formación">
-                                    <div class="between-form form-group">
-                                        <label>Universidad</label>
-                                        <h6>UNAM, Facultad de Ingeniería</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Tipo de Universidad</label>
-                                        <h6>Publica</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Carrera</label>
-                                        <h6>Ing. Mecatrónica</h6>
-                                    </div>
-                                   <div class="between-form form-group">
-                                        <label>Status</label>
-                                        <h6>Tutulado</h6>
-                                    </div>
+                                    <table class="data-table">
+                                      <tbody>
+                                        <tr>
+                                            <td>Universidad</td>
+                                            <td>UNAM, Facultad de Ingeniería</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tipo de Universidad</td>
+                                            <td>Publica</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carrera</td>
+                                            <td>Ing. Mecatrónica</td>
+                                        </tr>
+                                       <tr>
+                                            <td>Status</td>
+                                            <td>Titulado</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="Metricas">
                                     <div class="metrics-box">
@@ -268,182 +267,140 @@
                                                 <td class="counter">61</td>
                                             </tr>
                                         </tbody>
-                                    </table> 
- <!--                                    <table id="fresh-table" class="table table-hover">
-                                        <thead>
-                                            <th data-field="Tarea" data-sortable="true">Tarea</th>
-                                            <th data-field="Tiempo" data-sortable="true">Tiempo</th>
-                                            <th data-field="Proyecto" data-sortable="true">Proyecto</th>
-                                            <th data-field="Description" data-sortable="true">Descripción</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tarea</td>
-                                                <td>2:10</td>
-                                                <td>Proyecto</td>
-                                                <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tarea1</td>
-                                                <td>2:10</td>
-                                                <td>Proyecto</td>
-                                                <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tarea</td>
-                                                <td>2:10</td>
-                                                <td>Proyecto1</td>
-                                                <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tarea</td>
-                                                <td>1:10</td>
-                                                <td>Proyecto</td>
-                                                <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tarea</td>
-                                                <td>2:10</td>
-                                                <td>Proyecto</td>
-                                                <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tarea</td>
-                                                <td>2:10</td>
-                                                <td>Proyecto</td>
-                                                <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tarea</td>
-                                                <td>2:10</td>
-                                                <td>Proyecto</td>
-                                                <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris </td>
-                                            </tr>
-                                        </tbody>
-                                    </table> -->
-                    <table id="fresh-table" class="table table-hover">
-                                <thead>
-                                    <th data-field="Tareas" data-sortable="true">Tarea</th>
-                                    <th data-field="Proyecto" data-sortable="true">Proyecto</th>
-                                    <th data-field="Tiempo" data-sortable="true">Tiempo</th>
-                                    <th data-field="Descripcion" data-sortable="true">Descripción</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 1</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 2</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 2</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 2</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 2</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 2</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 2</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 2</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tarea</td>
-                                        <td>Proyecto 2</td>
-                                        <td>2:10</td>
-                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</td>
-                                    </tr>
-                                </tbody>
-                    </table>
+                                    </table>
+
+                                    <table id="fresh-table" class="table table-hover">
+                                                <thead>
+                                                    <th data-field="Tareas" data-sortable="true">Tarea</th>
+                                                    <th data-field="Proyecto" data-sortable="true">Proyecto</th>
+                                                    <th data-field="Tiempo" data-sortable="true">Tiempo</th>
+                                                    <th data-field="Descripcion" data-sortable="true">Descripción</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 1</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 2</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 2</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 2</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 2</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 2</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 2</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 2</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tarea</td>
+                                                        <td>Proyecto 2</td>
+                                                        <td>2:10</td>
+                                                        <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                    </table>
 
 
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Equipo">
-                                    <div class="between-form form-group">
-                                        <label>Maquina</label>
-                                        <h6>Macbook pro 13"</h6>
+
+                                <div role="tabpanel center" class="tab-pane" id="Equipo">
+                                  <!-- Asignar Equipo trigger modal -->
+                                  <button type="button" class="btn xl-btn" data-toggle="modal" data-target="#Asignar">
+                                    <i class="icon-circulo_mas icon-l"></i>Asignar Equipo
+                                  </button>
+
+                                  <!-- Asignar Equipo Modal -->
+                                  <div class="modal fade" id="Asignar" tabindex="-1" role="dialog" aria-labelledby="AsignarLabel">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                          <h4 class="modal-title" id="AsignarLabel">Asignar Equipo</h4>
+                                        </div>
+                                        <div class="modal-body form-group col-lg-12">
+                                              <div class="between-form form-group">
+                                                  <label>No. Serie</label>
+                                                  <input type="text" class="form-control"  placeholder="No. Serie...">
+                                              </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                          <button type="button" class="btn btn-primary">Crear</button>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="between-form form-group">
-                                        <label>Serial</label>
-                                        <h6>123123123123</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Teclado</label>
-                                        <h6>----</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Serial</label>
-                                        <h6>----</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Mouse</label>
-                                        <h6>-----</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Serial</label>
-                                        <h6>-----</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Memoria</label>
-                                        <h6>Memoria RAM 4GB</h6>
-                                    </div>
-                                    <div class="between-form form-group">
-                                        <label>Serial</label>
-                                        <h6>1236219830812</h6>
-                                    </div>
+                                  </div>
+
+                                    <table class="data-table">
+                                      <thead>
+                                          <th>Equipo</th>
+                                          <th>No. Serie</th>
+                                          <th>Edición</th>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>Mac BookPro 13"</td>
+                                              <td>12h3jhvv123</td>
+                                              <td class="text-center">
+                                                  <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                                      <i class="icon-circulo_tache icon-l"></i>
+                                                  </a>
+                                               </td>
+                                          </tr>
+                                          <tr>
+                                              <td>Memoria RAM 4GB"</td>
+                                              <td>12h3jhvv123</td>
+                                              <td class="text-center">
+                                                  <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                                      <i class="icon-circulo_tache icon-l"></i>
+                                                  </a>
+                                               </td>
+                                          </tr>
+                                      </tbody>
+                                    </table>
                                 </div>
                         </div>
                     </section>
@@ -483,13 +440,13 @@
                                 </div>
                                 <h5> <small>CTIN</small> </h5>
                                 <h5>Apuntate</h5>
-                            </div>   
-                            
+                            </div>
+
                         </div>
                     </section>
 
                 </div><!-- General User data -->
-                
+
             <!-- END Generl  -->
 
         </div>
@@ -506,7 +463,7 @@
     <script type="text/javascript">
         var $table = $('#fresh-table'),
             full_screen = false;
-            
+
         $().ready(function(){
             $table.bootstrapTable({
                 toolbar: ".toolbar",
@@ -528,7 +485,7 @@
                     return pageNumber + " filas visibles";
                 }
             });
-        });     
+        });
     </script>
 
 </body>

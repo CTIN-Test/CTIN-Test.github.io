@@ -26,7 +26,7 @@
 
         <!-- Navigation -->
         <nav class="navbar navbar-fixed-top">
-            
+
             <!-- Header logo -->
             <div class="navbar-header">
                 <a class="navbar-brand">
@@ -39,7 +39,7 @@
                 <ul class="nav navbar-nav side-nav ">
 
                     <li class="text-center row-4-2 active">
-                        <a href="home.html">
+                        <a href="../admin/index.html">
                             <i class="icon-home"></i>
                             <samp>Inicio</samp>
                         </a>
@@ -54,20 +54,20 @@
                     </li>
 
                     <li class="text-center row-4">
-                        <a href="becario.html"> 
-                            <i class="icon-estadisticas"></i>
-                            <samp>Graficas</samp>
+                        <a href="../admin/contenidos.html">
+                            <i class="icon-engranes"></i>
+                            <samp>Contenidos</samp>
                         </a>
                     </li>
-                    
+
                     <li class="text-center row-4">
-                        <a href="directorio-b-a.html">
+                        <a href="../admin/directorio-b-a.html">
                             <i class="icon-d_becarios"></i>
                             <samp>Becarios</samp>
                         </a>
                     </li>
                     <li class="text-center row-4">
-                        <a href="projects.html">
+                        <a href="../admin/projects.html">
                             <i class="icon-d_proyectos"></i>
                             <samp>Proyectos</samp>
                         </a>
@@ -89,7 +89,7 @@
                     <section class="row">
                         <form class="form-group col-lg-12">
                             <h4>General</h4>
-                        
+
                             <div class="between-form form-group">
                                 <label>Nombre(s)</label>
                                 <input type="text" class="form-control"  placeholder="Nombres">
@@ -161,6 +161,86 @@
 
                     <section class="row">
                         <form class="form-group col-lg-12">
+                            <h4>Contraseña</h4>
+                            <div class="between-form form-group">
+                                <label>Nueva Contraseña</label>
+                                <input type="text" class="form-control"placeholder="Nueva Contraseña">
+                            </div>
+                            <div class="between-form form-group">
+                                <label>Confirmación</label>
+                                <input type="number" class="form-control" placeholder="Confirmación">
+                            </div>
+                            <div class=" end-form form-group text-right">
+                                <button type="submit" class="btn btn-max-margin">Guardar cambios</button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <section class="row">
+
+                        <h4>Equipo</h4>
+
+                            <!-- Asignar Equipo trigger modal -->
+                        <button type="button" class="btn xl-btn" data-toggle="modal" data-target="#AltaEquipo">   
+                          <i class="icon-circulo_mas icon-l"></i>  Asignar Equipo
+                        </button>
+
+                        <!-- Asignar Equipo Modal -->
+                        <div class="modal fade" id="AltaEquipo" tabindex="-1" role="dialog" aria-labelledby="AltaEquipoLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="AltaEquipoLabel">Asignar Equipo</h4>
+                              </div>
+                              <div class="modal-body form-group col-lg-12">
+                                    <div class="between-form form-group">
+                                        <label>No. Serie</label>
+                                        <input type="text" class="form-control"  placeholder="XXXX-XXXX-XXXX">
+                                    </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn">Crear</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                            <table id="fresh-table" class="table table-hover">
+                              <thead>
+                                  <th data-field="Equipo" data-sortable="true">Equipo</th>
+                                  <th data-field="No. Serie" data-sortable="true">No. Serie</th>
+                                  <th> Eliminar </th>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>Mac BookPro 13"</td>
+                                      <td>12h3jhvv123</td>
+                                      <td class="text-center">
+                                          <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                              <i class="icon-circulo_tache icon-l"></i>
+                                          </a>
+                                       </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Memoria RAM 4GB"</td>
+                                      <td>12h3jhvv123</td>
+                                      <td class="text-center">
+                                          <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                              <i class="icon-circulo_tache icon-l"></i>
+                                          </a>
+                                       </td>
+                                  </tr>
+                              </tbody>
+                            </table>
+
+                    </section>
+
+                    <section class="row">
+                        <form class="form-group col-lg-12">
                             <h4>Contacto</h4>
                             <div class="between-form form-group">
                                 <label>Calle</label>
@@ -182,9 +262,9 @@
                                 <label>Estado</label>
                                 <input type="text" class="form-control" placeholder="Estado">
                             </div>
-                        
+
                             <h5>En caso de emergencia, podemos comunicarnos con:</h5>
-                            
+
                             <div class="between-form form-group">
                                 <label>Nombre</label>
                                 <input type="text" class="form-control"placeholder="Nombre">
@@ -207,7 +287,7 @@
                             </div>
                         </form>
                     </section>
-                    
+
                     <section class="row">
                         <form class="form-group col-lg-12">
                             <h4>Formación Academica</h4>
@@ -292,32 +372,32 @@
                                         </div>
 
                                 </div>
-      
+
                             </div>
 
                                 <div class="between-form form-group">
                                     <label>Habilidades</label>
                                 </div>
 
-                                <div class="form-group between-form text-left">   
+                                <div class="form-group between-form text-left">
                                     <textarea class="form-control" placeholder="Habilidades..."></textarea>
                                 </div>
-                           
+
 
                             <div class=" end-form form-group text-right">
                                 <button type="submit" class="btn btn-max-margin">Guardar cambios</button>
-                            </div>   
+                            </div>
                         </form>
                     </section>
-                                       
+
                 </div><!-- General User data -->
-                
+
             <!-- END Generl  -->
 
         </div>
         <!-- END General Container -->
 
-    
+
     <!-- /#wrapper -->
 
 <!-- jQuery -->
@@ -336,6 +416,24 @@
       pickTime: false
     });
   });
+</script>
+<!-- Bootstrap-table js -->
+<script src="../js/bootstrap-table.js"></script>
+<!-- Table script -->
+<script type="text/javascript">
+    var $table = $('#fresh-table'),
+        full_screen = false;
+    $().ready(function(){
+        $table.bootstrapTable({
+            toolbar: ".toolbar",
+            showRefresh: false,
+            search: false,
+            showToggle: false,
+            showColumns: false,
+            pagination: false,
+            striped: false
+        });
+    });
 </script>
 
 </body>

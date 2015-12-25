@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CTIN | Centro de Tecnología e Innovación</title>
+
+    <!-- Normalize CSS -->
+    <link href="../css/normalize.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/ctin.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../fonts/IconsCTIN/iconsCTIN.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body class="container">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top">
+
+            <!-- Header logo -->
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <img class="logo" src="../img/logo.svg">
+                </a>
+            </div> <!-- END Header logo -->
+
+            <!-- Sidebar Menu Items -->
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav side-nav ">
+
+                    <li class="text-center row-4-2 active">
+                        <a href="../admin/index.html">
+                            <i class="icon-home"></i>
+                            <samp>Inicio</samp>
+                        </a>
+                        <ul id="sub-menu">
+                            <li  class=" text-center row-8">
+                                <a href="../index.html">Log Out</a>
+                            </li>
+                            <li  class=" text-center row-8">
+                                <a href="buzon.html">Buzon</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="text-center row-4">
+                        <a href="../admin/contenidos.html">
+                            <i class="icon-engranes"></i>
+                            <samp>Contenidos</samp>
+                        </a>
+                    </li>
+
+                    <li class="text-center row-4">
+                        <a href="../admin/directorio-b-a.html">
+                            <i class="icon-d_becarios"></i>
+                            <samp>Becarios</samp>
+                        </a>
+                    </li>
+                    <li class="text-center row-4">
+                        <a href="../admin/projects.html">
+                            <i class="icon-d_proyectos"></i>
+                            <samp>Proyectos</samp>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Sidebar Menu Items  -->
+        </nav> <!-- End  Navigation -->
+
+        <!-- General Container -->
+        <div class="page-wrapper">
+
+            <!-- Generl Row -->
+
+                <!-- General User data -->
+                <div class="general-info col-sm-10 col-sm-offset-1">
+
+                    <section class="center">
+                         <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#Noticias" aria-controls="Noticias" role="tab" data-toggle="tab">Noticias</a></li>
+                            <li role="presentation"><a href="#Recursos" aria-controls="Recursos" role="tab" data-toggle="tab">Recursos</a></li>
+                            <li role="presentation"><a href="#Tareas" aria-controls="Tareas" role="tab" data-toggle="tab">Tareas</a></li>
+                            <li role="presentation"><a href="#Equipo" aria-controls="Equipo" role="tab" data-toggle="tab">Equipos</a></li>
+                            <li role="presentation"><a href="#Estadisticas" aria-controls="Estadisticas" role="tab" data-toggle="tab">Estadisticas</a></li>
+                        </ul>
+
+                          <!-- Tab panes -->
+                        <div class="tab-content col-sm-12" >
+
+                          <div role="tabpanel" class="tab-pane active" id="Noticias" ng-app="MyApp" ng-controller="PreviewCtrl" >
+                            <h4>Noticias</h4>
+                            <table class="data-table">
+                              <thead>
+                                  <th>Titulo</th>
+                                  <th>Texto</th>
+                                  <th>Link</th>
+                                  <th>Eliminar</th>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>Titulo</td>
+                                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid tempora fuga, quos quas vitae. Autem beatae ipsam consequatur nulla placeat, consequuntur, possimus aliquid sunt. Corrupti, nam minus aspernatur eius nemo.</td>
+                                      <td>
+                                        <a href="#" data-toggle="tooltip" title="Eliminar">
+                                            link.html
+                                        </a>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                              <i class="icon-circulo_tache icon-l"></i>
+                                          </a>
+                                       </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Titulo</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid tempora fuga, quos quas vitae. Autem beatae ipsam consequatur nulla placeat, consequuntur, possimus aliquid sunt. Corrupti, nam minus aspernatur eius nemo.</td>
+                                    <td>
+                                      <a href="#" data-toggle="tooltip" title="Eliminar">
+                                          link.html
+                                      </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                            <i class="icon-circulo_tache icon-l"></i>
+                                        </a>
+                                     </td>
+                                  </tr>
+                              </tbody>
+                            </table>
+
+
+                            <h4>Nueva Noticias</h4>
+                            <form class="form-group col-md-7">
+                                <div class="between-form form-group">
+                                    <label>Titulo</label>
+                                    <input type="text" class="form-control"  placeholder="Titulo..." ng-model="titulo">
+                                </div>
+                                <div class="between-form form-group">
+                                    <label>Link <small>(https://www.hola.com)</small></label>
+                                    <input type="text" class="form-control"  placeholder="Ej. https://www.hola.com" ng-model="link">
+                                </div>
+                                <div class="between-form form-group">
+                                    <label>Imagen <small>(250x300)</small></label>
+                                    <!-- <input type="file" id="exampleInputFile" class="custom-file-input"> -->
+                                    <input type="file" name="file-1[]" id="file-1" class="form-control inputfile" data-multiple-caption="{count} files selected" multiple ng-click="click()"/>
+                                    <label for="file-1" >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                            <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+                                        </svg>
+                                        <span>Elige un archivo&hellip;</span>
+                                    </label>
+                                </div>
+                                <div class="between-form form-group">
+                                    <label>Texto <small>(<%count()%> caracteres)</small> </label>
+                                </div>
+                                <div class="form-group between-form text-left">
+                                    <textarea class="form-control" placeholder="Texto..." ng-model="text"></textarea>
+                                </div>
+                                <div class=" end-form form-group text-right">
+                                    <button type="submit" class="btn btn-max-margin">Nueva Noticia</button>
+                                </div>
+                            </form>
+                            <div class="center col-md-4">
+                              <div class="board-container">
+                                <div class="board-flip">
+                                  <div class="board-front">
+                                    <img id="image-prev" ng-src="<%ima%>" alt="" />
+                                  </div>
+                                  <div class="board-back">
+                                    <div class="board-inner">
+                                      <h1><%titulo%></h1>
+                                      <p> <%text%> </p>
+                                      <a href="<%link%>" target="_blank" ng-show="link">
+                                        <i class="icon-link icon-xl"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div role="tabpanel" class="tab-pane" id="Recursos">
+                            <h3>Recursos</h3>
+                            <table class="data-table">
+                              <thead>
+                                  <th>Nombre</th>
+                                  <th>Archivo</th>
+                                  <th>Edición</th>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>Regramento CTIN</td>
+                                      <td>
+                                        <a href="#" data-toggle="tooltip">
+                                            Regramento_ctin_2015.pdf
+                                        </a>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                              <i class="icon-circulo_tache icon-l"></i>
+                                          </a>
+                                       </td>
+                                  </tr>
+                                  
+                              </tbody>
+                            </table>   
+                            <h3>Nuevo Recurso</h3>
+                            <form class="form-group col-md-12">
+                                <div class="between-form form-group">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control"  placeholder="Nombre...">
+                                </div>
+                                <div class="between-form form-group">
+                                    <label>Archivo</label>
+                                    <!-- <input type="file" id="exampleInputFile" class="custom-file-input"> -->
+                                    <input type="file" name="file-1[]" id="file-2" class="form-control inputfile" data-multiple-caption="{count} files selected" multiple ng-click="click()"/>
+                                    <label for="file-2" >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                            <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+                                        </svg>
+                                        <span>Elige un archivo&hellip;</span>
+                                    </label>
+                                </div>
+                                <div class=" end-form form-group text-right">
+                                    <button type="submit" class="btn btn-max-margin">Nuevo Recurso</button>
+                                </div>
+                            </form>  
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="Tareas">
+                            <h3>Tareas</h3>
+                            <table class="data-table">
+                              <thead>
+                                  <th>Nombre</th>
+                                  <th>Descripcion</th>
+                                  <th>Link</th>
+                                  <th>Edición</th>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>Tareas</td>
+                                      <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                      consequat.</td>
+                                      <td>
+                                        <a href="#" data-toggle="tooltip">
+                                            www.hola.com
+                                        </a>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                              <i class="icon-circulo_tache icon-l"></i>
+                                          </a>
+                                       </td>
+                                  </tr>
+                                  
+                              </tbody>
+                            </table>   
+                            <h3>Nuevo Recurso</h3>
+                            <form class="form-group col-md-12">
+                                <div class="between-form form-group">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control"  placeholder="Nombre...">
+                                </div>
+                                <div class="between-form form-group">
+                                    <label>Link</label>
+                                    <input type="text" class="form-control"  placeholder="Link...">
+                                </div>
+                                <div class="between-form form-group">
+                                    <label>Descripción</label>
+                                </div>
+                                <div class="between-form form-group">
+                                    <textarea class="form-control" placeholder="Texto..." ng-model="text"></textarea>
+                                </div>
+                                
+                                <div class=" end-form form-group text-right">
+                                    <button type="submit" class="btn btn-max-margin">Nueva Tarea</button>
+                                </div>
+                            </form>  
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="Equipo">
+                            <!-- Alta Equipo trigger modal -->
+                            <button type="button" class="btn xl-btn" data-toggle="modal" data-target="#AltaEquipo">
+                              <i class="icon-circulo_mas icon-l"></i>Añadir Equipo
+                            </button>
+
+                            <!-- Alta Equipo Modal -->
+                            <div class="modal fade" id="AltaEquipo" tabindex="-1" role="dialog" aria-labelledby="AltaEquipoLabel">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="AltaEquipoLabel">Alta Becario</h4>
+                                  </div>
+                                  <div class="modal-body form-group col-lg-12">
+                                        <div class="between-form form-group">
+                                            <label>Equipo</label>
+                                            <input type="text" class="form-control"  placeholder="Equipo...">
+                                        </div>
+                                        <div class="between-form form-group">
+                                            <label>No. Serie</label>
+                                            <input type="text" class="form-control"  placeholder="No. Serie...">
+                                        </div>
+                                        <div class="between-form form-group">
+                                            <label>Año</label>
+                                            <input type="text" class="form-control" placeholder="Año...">
+                                        </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Crear</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <table id="fresh-table" class="table table-hover">
+                              <thead>
+                                  <th data-field="Equipo" data-sortable="true">Equipo</th>
+                                  <th data-field="No. Serie" data-sortable="true">No. Serie</th>
+                                  <th data-field="Año" data-sortable="true">Año</th>
+                                  <th data-field="Asignado" data-sortable="true">Asignado</th>
+                                  <th>Edición</th>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>MacBookPro 13" - Apple</td>
+                                      <td>1231l23jbl1j</td>
+                                      <td>2011</td>
+                                      <td>
+                                        <a href="#">
+                                            Miguel Ruiz
+                                        </a>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                              <i class="icon-circulo_tache icon-l"></i>
+                                          </a>
+                                       </td>
+                                  </tr>
+                                  <tr>
+                                      <td>MacBookPro 13" - Apple</td>
+                                      <td>1231l23jbl1j</td>
+                                      <td>2011</td>
+                                      <td>No Asignado</td>
+                                      <td class="text-center">
+                                          <a href="becario-simple.html" data-toggle="tooltip" title="Eliminar">
+                                              <i class="icon-circulo_tache icon-l"></i>
+                                          </a>
+                                       </td>
+                                  </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="Estadisticas">
+                            ....
+                          </div>
+                        </div>
+                    </section>
+
+                </div><!-- General User data -->
+
+            <!-- END Generl  -->
+
+        </div>
+        <!-- END General Container -->
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Bootstrap-table js -->
+    <script src="../js/bootstrap-table.js"></script>
+    <!-- Table script -->
+    <script type="text/javascript">
+      var $table = $('#fresh-table'),
+          full_screen = false;
+
+      $().ready(function(){
+          $table.bootstrapTable({
+              toolbar: ".toolbar",
+              showRefresh: false,
+              search: true,
+              showToggle: false,
+              showColumns: false,
+              pagination: true,
+              striped: true,
+              pageSize: 8,
+              pageList: [8,10,25,50,100],
+              formatSearch: function(){
+                  return "Buscar";
+              },
+              formatShowingRows: function(pageFrom, pageTo, totalRows){
+                  return "Total de equipos " + totalRows
+              },
+              formatRecordsPerPage: function(pageNumber){
+                  return pageNumber + " filas visibles";
+              }
+          });
+      });
+    </script>
+    <!-- Custom file input js -->
+    <script src="../js/custom-file-input.js"></script>
+    <!-- Angular js -->
+    <script src="../js/angular.min.js"></script>
+    <!-- Preview js -->
+    <script src="../js/preview.js"></script>
+
+</body>
+
+</html>

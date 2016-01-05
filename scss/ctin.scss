@@ -629,6 +629,15 @@ i{
 	max-height: 400px;
 }
 
+.chart-donut{
+	height: 30vh;
+  width: 30vh;
+	min-height: 200px;
+	max-height: 400px;
+  min-width: 200px;
+  max-width: 400px;
+}
+
 // ====================================
 //            User Profile
 // ====================================
@@ -971,6 +980,50 @@ $image-size: 20vw;
 		}
 	}
 
+  .time-out{
+    width:      70vw;
+    min-width:  300px;
+    min-height: 100px;
+    max-height: 100px;
+    max-width:  1000px;
+
+    margin:           10px 0;
+    border-radius:    300px;
+    background-color: $cancel;
+
+    display:         flex !important; /* added */
+    flex-direction:  row;
+    flex-wrap:       nowrap;
+    align-items:     center;
+    justify-content:  center;//center;
+
+    i{
+      vertical-align: sub;
+      margin:         0px 20px;
+      padding:        0;
+      font-size:      60px !important;
+      color:          $blanco;
+    }
+
+    p{
+
+      padding:        0;
+      margin:         0;
+      width:          70%;
+      color:          $blanco;
+      text-align:     left;
+      vertical-align: bottom;
+      text-transform: uppercase;
+      font-family:    AndaleMono;
+      font-size:      18px;
+
+			small{
+				color: rgba($blanco, 0.6);
+			}
+		}
+
+  }
+
 	.top-down{
 
     width:      70vw;
@@ -978,6 +1031,8 @@ $image-size: 20vw;
     min-height: 200px;
     max-height: 250px;
     max-width:  1000px;
+
+    margin: 10px 0;
 
     color:            $blanco;
     background-color: $cancel;
@@ -1014,6 +1069,15 @@ $image-size: 20vw;
 		}
 	}
 
+  .homework{
+    @extend .top-down;
+    background-color: $azul-ctin;
+    border-color:     $azul-ctin;
+    &:nth-child(odd) {
+			background-color: $rojo-ctin;
+      border-color:     $rojo-ctin;
+		}
+  }
 
 .metrics-box{
 	@extend .center-around;

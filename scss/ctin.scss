@@ -1106,6 +1106,14 @@ $image-size: 20vw;
 	 		color: $rojo-ctin;
 	 	}
 	}
+
+  .graph{
+    width: 100%;
+    text-align: center;
+    h5{
+	 		color: $rojo-ctin;
+	 	}
+  }
 }
 
 .metrics-table{
@@ -1237,8 +1245,8 @@ $image-size: 20vw;
 
 	.winner-container {
 		@extend .board-container ;
-    width:  200px;
-    height: 200px;
+    width:  150px;
+    height: 150px;
     margin: 5px;
 
 		.board-flip{
@@ -1253,15 +1261,28 @@ $image-size: 20vw;
 			}
 		}
 
+    .board-inner{
+      padding: 10px;
+      @extend .center ;
+      h5 {
+        font-size: 13px;
+        margin: 5px 0;
+        text-overflow: ellipsis;
+        small{
+          font-size: 12px;
+        }
+  		}
+    }
+
 		fieldset {
+      margin: 0;
 		  label{
 			  	&:before{
-				  font-size: 1.2em;
+				        font-size: 1em;
 			    }
 			}
 		}
 	}
-
 
 // ====================================
 //            Forms
@@ -1716,7 +1737,6 @@ fieldset {
 		.metrics{
 			.data{
 				border: solid $azurlRey-ctin 5px;
-
 			}
 		}
 	}

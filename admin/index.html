@@ -285,7 +285,7 @@
                                         <div class="board-back">
                                             <div class="board-inner">
                                                 <h5><small>Software</small></h5>
-                                                <h5>Miguel Angel Ruiz Gálvez</h5>
+                                                <h5>Francia Montserrat Miriam Graciela García Velazquez</h5>
                                                 <h5><small>Ing. Mecatrónico</small></h5>
                                                 <fieldset class="rating" data-rate ="3"></fieldset>
                                             </div>
@@ -355,8 +355,47 @@
                               </div>
                               <h5>Asistencia Promedio</h5>
                             </div>
+
+                            <div class="graph">
+                              <div class="chart-full" id="desempeño-general"></div>
+                              <h5>Grafica de desempeño</h5>
+                            </div>
+
+                            <div class="graph">
+                              <div class="chart-full" id="asistencia-general"></div>
+                              <h5>Grafica de Asistencia</h5>
+                            </div>
+
                         </div>
-                        <div class="chart-full" id="desempeño-general"></div>
+
+                        <h4>Tiempo en CTIN</h4>
+
+                        <div class="metrics-box">
+                          <div class="metrics">
+                              <div class="data">
+                                  <span class="counter">12</span><b>meses</b>
+                              </div>
+                              <h5>Tiempo en CTIN Promedio</h5>
+                          </div>
+                          <div class="metrics">
+                            <div class="data">
+                                <span class="counter">12</span><b>meses</b>
+                            </div>
+                            <h5>Tiempo en CTIN Promedio Mujeres</h5>
+                          </div>
+                          <div class="metrics">
+                              <div class="data">
+                                  <span class="counter">12</span><b>meses</b>
+                              </div>
+                              <h5>Tiempo en CTIN Promedio Hombres</h5>
+                          </div>
+                          <div class="metrics">
+                              <div class="chart-donut" id="tiempo"></div>
+                              <h5>Becarios por Periodo de Tiempo</h5>
+                          </div>
+                        </div>
+
+
 
                         <h4>Escolaridad</h4>
 
@@ -377,6 +416,68 @@
                                 <div class="chart-donut" id="status"></div>
                                 <h5>Status de Becarios</h5>
                             </div>
+                        </div>
+
+                        <h4>Proyectos</h4>
+
+                        <div class="metrics-box">
+                          <div class="metrics">
+                              <div class="data">
+                                  <span class="counter">120</span>
+                              </div>
+                              <h5>Todos los Proyectos</h5>
+                          </div>
+                          <div class="metrics">
+                              <div class="data">
+                                  <span class="counter">12</span>
+                              </div>
+                              <h5>Proyectos Activos</h5>
+                          </div>
+                          <div class="metrics">
+                              <div class="data">
+                                  <span class="counter">30</span>
+                              </div>
+                              <h5>Proyectos Terminados</h5>
+                          </div>
+
+                        </div>
+
+                        <h4>Proyectos con mayor número de horas</h4>
+                        <div class="col-lg-12 center-around">
+                            <div class="img-general-link active">
+                                <div class="img-container progress-0">
+                                    <img class=" " src="../img/project.png">
+                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                </div>
+                                <h5> <small>CTIN</small> </h5>
+                                <h5>Apuntate</h5>
+                            </div>
+                            <div class="img-general-link active">
+                                <div class="img-container progress-30">
+                                    <img class=" " src="../img/project.png">
+                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                </div>
+                                <h5> <small>CTIN</small> </h5>
+                                <h5>Apuntate</h5>
+                            </div>
+                            <div class="img-general-link active">
+                                <div class="img-container progress-60">
+                                    <img class=" " src="../img/project.png">
+                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                </div>
+                                <h5> <small>CTIN</small> </h5>
+                                <h5>Apuntate</h5>
+                            </div>
+                            <div class="img-general-link active">
+                                <div class="img-container progress-100">
+                                    <img class=" " src="../img/project.png">
+                                    <a href="project-simple.html"><span class="icon-d_proyectos"></span></a>
+                                </div>
+                                <h5> <small>CTIN</small> </h5>
+                                <h5>Apuntate</h5>
+                            </div>
+
+
                         </div>
 
                     </section>
@@ -519,10 +620,10 @@
     Morris.Bar({
       element: 'desempeño-general',
       data: [
-        {x: 'Enero 1 - 15', Promedio: 65.3, Hombres: 54.4, Mujeres: 60},
-        {x: 'Enero 15 - 31', Promedio: 67.3, Hombres: 60.4, Mujeres: 70.4},
-        {x: 'Febrero 1- 15', Promedio: 62.3, Hombres: 88.4, Mujeres: 50},
-        {x: 'Febrero 15- 28', Promedio: 65.3, Hombres: 70.4, Mujeres: 70}
+        {x: '1', Promedio: 65.3, Hombres: 54.4, Mujeres: 60},
+        {x: '2', Promedio: 67.3, Hombres: 60.4, Mujeres: 70.4},
+        {x: '3', Promedio: 62.3, Hombres: 88.4, Mujeres: 50},
+        {x: '4', Promedio: 65.3, Hombres: 70.4, Mujeres: 70}
       ],
       xkey: 'x',
       ykeys: ['Promedio', 'Hombres', 'Mujeres'],
@@ -535,6 +636,52 @@
         else if(series.label == "Hombres") return "#14D5DB";
         else if(series.label == "Mujeres") return "#EF4562";
       },
+      formatter: function (x) { return x + "%"}
+    });
+
+    Morris.Bar({
+      element: 'asistencia-general',
+      data: [
+        {x: '1', Promedio: 65.3, Hombres: 54.4, Mujeres: 60},
+        {x: '2', Promedio: 67.3, Hombres: 60.4, Mujeres: 70.4},
+        {x: '3', Promedio: 62.3, Hombres: 88.4, Mujeres: 50},
+        {x: '4', Promedio: 65.3, Hombres: 70.4, Mujeres: 70}
+      ],
+      xkey: 'x',
+      ykeys: ['Promedio', 'Hombres', 'Mujeres'],
+      labels: ['Promedio', 'Hombres', 'Mujeres'],
+      resize: true,
+      barColors: function (row, series, type) {
+        // console.log(series);
+        // console.log(row);
+        if(series.label == "Promedio") return "#000637";
+        else if(series.label == "Hombres") return "#14D5DB";
+        else if(series.label == "Mujeres") return "#EF4562";
+      },
+      formatter: function (x) { return x + "%"}
+    });
+
+    Morris.Donut({
+      element: 'tiempo',
+      data: [
+        {value: 10, label: '3 Meses'},
+        {value: 10, label: '6 Meses'},
+        {value: 20, label: '9 Meses'},
+        {value: 15, label: 'Un año'},
+        {value: 15, label: '1 año 3 Meses'},
+        {value: 10, label: '1 año 6 Meses'},
+        {value: 10, label: '1 año 9 Meses'},
+        {value: 10, label: '1 año'}
+      ],
+      backgroundColor: '#ccc',
+      labelColor: '#424242',
+      colors: [
+      '#601F48',
+      '#301340',
+      '#000637',
+      '#042F58',
+      '#085979'
+      ],
       formatter: function (x) { return x + "%"}
     });
 

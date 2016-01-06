@@ -11,15 +11,16 @@
 $rojo-ctin:     #EF4562;
 $azul-ctin:     #14D5DB;
 $azurlRey-ctin: #000637;
-$blanco:        #fafafa;
+$blanco:        #EDEDED;
 $negro:         #000000;
 $gris:          #424242;
-$gris-claro:    #c7c7c7;
+$gris-claro:    #e0e0e0;
 
 $active: #88aa29;
 $end:    #093ccc;
 $cancel: #BF2A40;
 $gold:   #f9c806;
+$alert: #F4840B;
 
 $btn-normal: #042F58;
 $btn-hover:  #0A6E89;
@@ -258,6 +259,9 @@ h3, .h3{
   border-bottom: solid 4px $rojo-ctin;
   margin:        3vh 0 !important;
   width:         50%;
+  & + h4{
+    margin: 8vh 0 !important;
+  }
 }
 
 h4, .h4{
@@ -615,27 +619,41 @@ i{
 }
 
 .column-form{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  display:         flex;
+  flex-direction:  column;
+  align-items:     center;
+  justify-content: center;
 }
 
 .chart-full{
-	width: 100%;
-	min-height: 250px;
-	height: 20vh;
-	min-height: 200px;
-	max-height: 400px;
+  width:      100%;
+  min-height: 250px;
+  height:     20vh;
+  min-height: 200px;
+  max-height: 400px;
 }
 
 .chart-donut{
-	height: 30vh;
-  width: 30vh;
-	min-height: 200px;
-	max-height: 400px;
-  min-width: 200px;
-  max-width: 400px;
+  height:     30vh;
+  width:      30vh;
+  min-height: 200px;
+  max-height: 400px;
+  min-width:  200px;
+  max-width:  400px;
+}
+
+.full-center{
+  height:     100%;
+  min-height: 200px;
+  @extend .column-form;
+  justify-content: space-around;
+  h5{
+    font-size: 18px;
+  }
+}
+
+.blanco{
+  color:$blanco;
 }
 
 // ====================================
@@ -783,6 +801,7 @@ $image-size: 20vw;
           top:            50%;
           left:           0;
           right:          0;
+          @include blur(0px);
           @include transform-y-50();
 		    }
 
@@ -816,6 +835,9 @@ $image-size: 20vw;
 		    		opacity: 1;
 		    		@include blur(1px);
 		    	}
+          p{
+            @include blur(1px);
+          }
 		    	a{
             opacity: 1;
             top:     0;
@@ -931,10 +953,13 @@ $image-size: 20vw;
 		}
 
 		h5{
-      margin-top:    5px;
-      margin-bottom: 5px;
-      font-size:     14px;
-      text-align:    center;
+      margin:     5px 0;
+      font-size:  14px;
+      text-align: center;
+
+      &:nth-child(2){
+        margin-top: 15px !important;
+      }
 
 			span{
         text-transform: uppercase;
@@ -989,7 +1014,7 @@ $image-size: 20vw;
 
     margin:           10px 0;
     border-radius:    300px;
-    background-color: $cancel;
+    background-color: $alert;
 
     display:         flex !important; /* added */
     flex-direction:  row;
@@ -1006,7 +1031,6 @@ $image-size: 20vw;
     }
 
     p{
-
       padding:        0;
       margin:         0;
       width:          70%;
@@ -1016,7 +1040,6 @@ $image-size: 20vw;
       text-transform: uppercase;
       font-family:    AndaleMono;
       font-size:      18px;
-
 			small{
 				color: rgba($blanco, 0.6);
 			}
@@ -1025,27 +1048,22 @@ $image-size: 20vw;
   }
 
 	.top-down{
-
-    width:      70vw;
-    min-width:  300px;
-    min-height: 200px;
-    max-height: 250px;
-    max-width:  1000px;
-
-    margin: 10px 0;
-
+    width:            70vw;
+    min-width:        300px;
+    min-height:       200px;
+    max-height:       250px;
+    max-width:        1000px;
+    margin:           10px 0;
     color:            $blanco;
     background-color: $cancel;
-
-    border-radius: 300px;
-    border:        solid $cancel 5px;
-    overflow:      hidden;
-
-    display:         flex !important; /* added */
-    flex-direction:  row;
-    flex-wrap:       nowrap;
-    align-items:     center;
-    justify-content: space-around;//center;
+    border-radius:    300px;
+    border:           solid $cancel 5px;
+    overflow:         hidden;
+    display:          flex !important; /* added */
+    flex-direction:   row;
+    flex-wrap:        nowrap;
+    align-items:      center;
+    justify-content:  space-around;//center;
 
 		p{
       padding:    20px 100px 20px 20px;
@@ -1104,6 +1122,7 @@ $image-size: 20vw;
 		}
 	 	h5{
 	 		color: $rojo-ctin;
+      text-align: center;
 	 	}
 	}
 
@@ -1118,8 +1137,7 @@ $image-size: 20vw;
 
 .metrics-table{
     width:        80% !important;
-    margin-left:  10%;
-    margin-right: 10%;
+    margin: 30px  10%;
 		tr{
 			th, td{
         text-align: center;
@@ -1320,6 +1338,7 @@ $image-size: 20vw;
             width:       45px;
             text-indent: 10%;
             min-width:   45px;
+            margin: 0 5px;
 					}
 				}
 
@@ -1571,11 +1590,14 @@ fieldset {
 
 .chat {
   //background: rgba($azurlRey-ctin, 1);
-  background:      url(../img/login-bg.svg) center ;
+  width: 50vw;
+  min-width: 400px;
+  // background:      url(../img/login-bg.svg) center ;
   background-size: cover;
   color:           $azul-ctin;
   border-radius:   20px;
   overflow:        hidden;
+  border: solid $azurlRey-ctin;
 
   .nav-tabs{
     border:        none;
@@ -1613,12 +1635,14 @@ fieldset {
   }
 
 	.chat-history {
+    background:    rgba($azurlRey-ctin,0.6);
+    background-repeat: repeat;
+    background-size: 20% auto;
     overflow-y:    scroll;
     height:        400px;
     width:         100%;
-    background:    $blanco;
-    border-bottom: 5px solid $gris;
-    border-top:    5px solid $gris;
+    border-bottom: 5px solid rgba($azurlRey-ctin,0.6);
+    border-top:    5px solid rgba($azurlRey-ctin,0.6);
 
 	  @extend .center;
     align-items: flex-start;
@@ -1627,14 +1651,16 @@ fieldset {
 	  ul{
 	  	width: 100%;
 	  	@extend .center;
+      margin: 0;
+      padding: 0;
 	  	.active{
 	  		border-color: $active;
-	  		border-width: 5px;
+	  		border-width: 3px;
 	  	}
 
   		li{
-        margin:           20px 0px;
-        padding:          0 20px;
+        margin:           10px 0px;
+        padding: 10px;
         width:            80%;
         min-width:        200px;
         list-style:       none;
@@ -1643,10 +1669,10 @@ fieldset {
         background-color: $blanco;
 
 		  	.mesage-area{
-          width:      95%;
-          padding:    5px;
+          width:      100%;
+          margin: 0 !important;
+          padding: 3px 10px;
           text-align: justify;
-
 		  		.message-data-time {
             color:         $rojo-ctin;
             font-family:   Andale;
@@ -1662,16 +1688,17 @@ fieldset {
   }
 
 	.chat-message {
-	  margin: 1vh 0;
+    margin: 0;
+    padding: 0;
 	  textarea {
-      width:         70%;
-      height:        70px;
-      border:        solid $gris 2px;
-      padding:       10px 20px;
-      margin-bottom: 10px;
-      border-radius: 20px;
-      resize:        none;
-      color:         $gris;
+      background: transparent;
+      width:      80%;
+      height:     auto;
+      min-height: 70px;
+      padding:    5px 0;
+      border:     none;
+      resize:     none;
+      color:      $gris;
 		}
 	}
 }

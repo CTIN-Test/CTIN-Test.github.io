@@ -508,12 +508,12 @@ i{
         margin-top:       0px;
         margin-bottom:    20px;
         width:            100%;
-        background-color: rgba(256,256,256,0.5);
+        background-color: #fff;
         border:           none;
         border-radius:    5px;
-        color:            $blanco;
+        color:            $gris;
         @include appearance(none);
-				@include placeholder($blanco);
+				@include placeholder($gris);
 			}
 
 		}
@@ -1323,7 +1323,7 @@ $image-size: 20vw;
           margin:           10px 0px;
           font-family:      Lato-regular;
           font-weight:      normal;
-					@include placeholder($gris-claro);
+					@include placeholder(rgba($gris,0.5));
 				}
 
 				select{

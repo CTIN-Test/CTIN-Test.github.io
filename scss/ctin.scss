@@ -660,6 +660,14 @@ i{
 //            User Profile
 // ====================================
 
+  .image-405{
+    @include transform-center();
+  }
+
+// ====================================
+//            User Profile
+// ====================================
+
 $info-header-height: 25vh;
 $image-size: 20vw;
 
@@ -1095,6 +1103,12 @@ $image-size: 20vw;
     @extend .top-down;
     background-color: $azul-ctin;
     border-color:     $azul-ctin;
+
+    p{
+      font-size: 18px;
+      color: $blanco;
+    }
+
     &:nth-child(odd) {
 			background-color: $rojo-ctin;
       border-color:     $rojo-ctin;
